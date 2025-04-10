@@ -1,0 +1,65 @@
+{
+    "player": [
+      {
+        "id": "42828",
+        "name": "Conrad Greenshields",
+        "teamName": "Portugal",
+        "faceImageId": 182026
+      },
+      {
+        "id": "9406",
+        "name": "Nicholas Pooran",
+        "teamName": "West Indies",
+        "faceImageId": 244722
+      },
+      {
+        "id": "10636",
+        "name": "Rajat Patidar",
+        "teamName": "India",
+        "faceImageId": 234983
+      },
+      {
+        "id": "25210",
+        "name": "Kuruge Abeyrathna",
+        "teamName": "Norway",
+        "faceImageId": 182026
+      },
+      {
+        "id": "10808",
+        "name": "Mohammed Siraj",
+        "teamName": "India",
+        "faceImageId": 591952
+      },
+      {
+        "id": "11540",
+        "name": "Jofra Archer",
+        "teamName": "England",
+        "faceImageId": 617429
+      },
+      {
+        "id": "8733",
+        "name": "KL Rahul",
+        "teamName": "India",
+        "faceImageId": 616523
+      },
+      {
+        "id": "9551",
+        "name": "Michael Bracewell",
+        "teamName": "New Zealand",
+        "faceImageId": 616430
+      },
+      {
+        "id": "1448289",
+        "name": "Digvesh Singh Rathi",
+        "teamName": "India",
+        "faceImageId": 182026
+      },
+      {
+        "id": "15861",
+        "name": "Vaibhav Arora",
+        "teamName": "India",
+        "faceImageId": 182026
+      }
+    ],
+    "category": "TRENDING SEARCHES"
+  }

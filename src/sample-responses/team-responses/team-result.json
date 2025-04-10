@@ -1,0 +1,550 @@
+{
+    "teamMatchesData": [
+      {
+        "matchDetailsMap": {
+          "key": "Indian Premier League 2025",
+          "match": [
+            {
+              "matchInfo": {
+                "matchId": 115030,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "11th Match",
+                "matchFormat": "T20",
+                "startDate": "1743343200000",
+                "endDate": "1743355800000",
+                "state": "Complete",
+                "status": "Rajasthan Royals won by 6 runs",
+                "team1": {
+                  "teamId": 64,
+                  "teamName": "Rajasthan Royals",
+                  "teamSName": "RR",
+                  "imageId": 225647
+                },
+                "team2": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "venueInfo": {
+                  "id": 380,
+                  "ground": "Barsapara Cricket Stadium",
+                  "city": "Guwahati",
+                  "timezone": "+05:30"
+                },
+                "currBatTeamId": 64,
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              },
+              "matchScore": {
+                "team1Score": {
+                  "inngs1": {
+                    "inningsId": 1,
+                    "runs": 182,
+                    "wickets": 9,
+                    "overs": 20
+                  }
+                },
+                "team2Score": {
+                  "inngs1": {
+                    "inningsId": 2,
+                    "runs": 176,
+                    "wickets": 6,
+                    "overs": 20
+                  }
+                }
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115012,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "8th Match",
+                "matchFormat": "T20",
+                "startDate": "1743170400000",
+                "endDate": "1743183000000",
+                "state": "Complete",
+                "status": "Royal Challengers Bengaluru won by 50 runs",
+                "team1": {
+                  "teamId": 59,
+                  "teamName": "Royal Challengers Bengaluru",
+                  "teamSName": "RCB",
+                  "imageId": 225643
+                },
+                "team2": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "venueInfo": {
+                  "id": 11,
+                  "ground": "MA Chidambaram Stadium",
+                  "city": "Chennai",
+                  "timezone": "+05:30"
+                },
+                "currBatTeamId": 59,
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              },
+              "matchScore": {
+                "team1Score": {
+                  "inngs1": {
+                    "inningsId": 1,
+                    "runs": 196,
+                    "wickets": 7,
+                    "overs": 20
+                  }
+                },
+                "team2Score": {
+                  "inngs1": {
+                    "inningsId": 2,
+                    "runs": 146,
+                    "wickets": 8,
+                    "overs": 20
+                  }
+                }
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 114976,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "3rd Match",
+                "matchFormat": "T20",
+                "startDate": "1742738400000",
+                "endDate": "1742751000000",
+                "state": "Complete",
+                "status": "Chennai Super Kings won by 4 wkts",
+                "team1": {
+                  "teamId": 62,
+                  "teamName": "Mumbai Indians",
+                  "teamSName": "MI",
+                  "imageId": 225645
+                },
+                "team2": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "venueInfo": {
+                  "id": 11,
+                  "ground": "MA Chidambaram Stadium",
+                  "city": "Chennai",
+                  "timezone": "+05:30"
+                },
+                "currBatTeamId": 58,
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              },
+              "matchScore": {
+                "team1Score": {
+                  "inngs1": {
+                    "inningsId": 1,
+                    "runs": 155,
+                    "wickets": 9,
+                    "overs": 20
+                  }
+                },
+                "team2Score": {
+                  "inngs1": {
+                    "inningsId": 2,
+                    "runs": 158,
+                    "wickets": 6,
+                    "overs": 19.1
+                  }
+                }
+              }
+            }
+          ],
+          "seriesId": 9237
+        }
+      },
+      {
+        "matchDetailsMap": {
+          "key": "Indian Premier League 2024",
+          "match": [
+            {
+              "matchInfo": {
+                "matchId": 91704,
+                "seriesId": 7607,
+                "seriesName": "Indian Premier League 2024",
+                "matchDesc": "68th Match",
+                "matchFormat": "T20",
+                "startDate": "1716040800000",
+                "endDate": "1716053400000",
+                "state": "Complete",
+                "status": "Royal Challengers Bengaluru won by 27 runs",
+                "team1": {
+                  "teamId": 59,
+                  "teamName": "Royal Challengers Bengaluru",
+                  "teamSName": "RCB",
+                  "imageId": 225643
+                },
+                "team2": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "venueInfo": {
+                  "id": 27,
+                  "ground": "M.Chinnaswamy Stadium",
+                  "city": "Bengaluru",
+                  "timezone": "+05:30"
+                },
+                "currBatTeamId": 59,
+                "seriesStartDt": "1711065600000",
+                "seriesEndDt": "1716854400000",
+                "isTimeAnnounced": true
+              },
+              "matchScore": {
+                "team1Score": {
+                  "inngs1": {
+                    "inningsId": 1,
+                    "runs": 218,
+                    "wickets": 5,
+                    "overs": 20
+                  }
+                },
+                "team2Score": {
+                  "inngs1": {
+                    "inningsId": 2,
+                    "runs": 191,
+                    "wickets": 7,
+                    "overs": 20
+                  }
+                }
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 91663,
+                "seriesId": 7607,
+                "seriesName": "Indian Premier League 2024",
+                "matchDesc": "61st Match",
+                "matchFormat": "T20",
+                "startDate": "1715508000000",
+                "endDate": "1715520600000",
+                "state": "Complete",
+                "status": "Chennai Super Kings won by 5 wkts",
+                "team1": {
+                  "teamId": 64,
+                  "teamName": "Rajasthan Royals",
+                  "teamSName": "RR",
+                  "imageId": 225647
+                },
+                "team2": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "venueInfo": {
+                  "id": 11,
+                  "ground": "MA Chidambaram Stadium",
+                  "city": "Chennai",
+                  "timezone": "+05:30"
+                },
+                "currBatTeamId": 58,
+                "seriesStartDt": "1711065600000",
+                "seriesEndDt": "1716854400000",
+                "isTimeAnnounced": true
+              },
+              "matchScore": {
+                "team1Score": {
+                  "inngs1": {
+                    "inningsId": 1,
+                    "runs": 141,
+                    "wickets": 5,
+                    "overs": 20
+                  }
+                },
+                "team2Score": {
+                  "inngs1": {
+                    "inningsId": 2,
+                    "runs": 145,
+                    "wickets": 5,
+                    "overs": 18.2
+                  }
+                }
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 91650,
+                "seriesId": 7607,
+                "seriesName": "Indian Premier League 2024",
+                "matchDesc": "59th Match",
+                "matchFormat": "T20",
+                "startDate": "1715349600000",
+                "endDate": "1715362200000",
+                "state": "Complete",
+                "status": "Gujarat Titans won by 35 runs",
+                "team1": {
+                  "teamId": 971,
+                  "teamName": "Gujarat Titans",
+                  "teamSName": "GT",
+                  "imageId": 235085
+                },
+                "team2": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "venueInfo": {
+                  "id": 50,
+                  "ground": "Narendra Modi Stadium",
+                  "city": "Ahmedabad",
+                  "timezone": "+05:30"
+                },
+                "currBatTeamId": 971,
+                "seriesStartDt": "1711065600000",
+                "seriesEndDt": "1716854400000",
+                "isTimeAnnounced": true
+              },
+              "matchScore": {
+                "team1Score": {
+                  "inngs1": {
+                    "inningsId": 1,
+                    "runs": 231,
+                    "wickets": 3,
+                    "overs": 20
+                  }
+                },
+                "team2Score": {
+                  "inngs1": {
+                    "inningsId": 2,
+                    "runs": 196,
+                    "wickets": 8,
+                    "overs": 20
+                  }
+                }
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 91609,
+                "seriesId": 7607,
+                "seriesName": "Indian Premier League 2024",
+                "matchDesc": "53rd Match",
+                "matchFormat": "T20",
+                "startDate": "1714903200000",
+                "endDate": "1714915800000",
+                "state": "Complete",
+                "status": "Chennai Super Kings won by 28 runs",
+                "team1": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "team2": {
+                  "teamId": 65,
+                  "teamName": "Punjab Kings",
+                  "teamSName": "PBKS",
+                  "imageId": 225648
+                },
+                "venueInfo": {
+                  "id": 155,
+                  "ground": "Himachal Pradesh Cricket Association Stadium",
+                  "city": "Dharamsala",
+                  "timezone": "+05:30"
+                },
+                "currBatTeamId": 58,
+                "seriesStartDt": "1711065600000",
+                "seriesEndDt": "1716854400000",
+                "isTimeAnnounced": true
+              },
+              "matchScore": {
+                "team1Score": {
+                  "inngs1": {
+                    "inningsId": 1,
+                    "runs": 167,
+                    "wickets": 9,
+                    "overs": 20
+                  }
+                },
+                "team2Score": {
+                  "inngs1": {
+                    "inningsId": 2,
+                    "runs": 139,
+                    "wickets": 9,
+                    "overs": 20
+                  }
+                }
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 91578,
+                "seriesId": 7607,
+                "seriesName": "Indian Premier League 2024",
+                "matchDesc": "49th Match",
+                "matchFormat": "T20",
+                "startDate": "1714572000000",
+                "endDate": "1714584600000",
+                "state": "Complete",
+                "status": "Punjab Kings won by 7 wkts",
+                "team1": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "team2": {
+                  "teamId": 65,
+                  "teamName": "Punjab Kings",
+                  "teamSName": "PBKS",
+                  "imageId": 225648
+                },
+                "venueInfo": {
+                  "id": 11,
+                  "ground": "MA Chidambaram Stadium",
+                  "city": "Chennai",
+                  "timezone": "+05:30"
+                },
+                "currBatTeamId": 65,
+                "seriesStartDt": "1711065600000",
+                "seriesEndDt": "1716854400000",
+                "isTimeAnnounced": true
+              },
+              "matchScore": {
+                "team1Score": {
+                  "inngs1": {
+                    "inningsId": 1,
+                    "runs": 162,
+                    "wickets": 7,
+                    "overs": 20
+                  }
+                },
+                "team2Score": {
+                  "inngs1": {
+                    "inningsId": 2,
+                    "runs": 163,
+                    "wickets": 3,
+                    "overs": 17.5
+                  }
+                }
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 91555,
+                "seriesId": 7607,
+                "seriesName": "Indian Premier League 2024",
+                "matchDesc": "46th Match",
+                "matchFormat": "T20",
+                "startDate": "1714312800000",
+                "endDate": "1714325400000",
+                "state": "Complete",
+                "status": "Chennai Super Kings won by 78 runs",
+                "team1": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "team2": {
+                  "teamId": 255,
+                  "teamName": "Sunrisers Hyderabad",
+                  "teamSName": "SRH",
+                  "imageId": 225649
+                },
+                "venueInfo": {
+                  "id": 11,
+                  "ground": "MA Chidambaram Stadium",
+                  "city": "Chennai",
+                  "timezone": "+05:30"
+                },
+                "currBatTeamId": 58,
+                "seriesStartDt": "1711065600000",
+                "seriesEndDt": "1716854400000",
+                "isTimeAnnounced": true
+              },
+              "matchScore": {
+                "team1Score": {
+                  "inngs1": {
+                    "inningsId": 1,
+                    "runs": 212,
+                    "wickets": 3,
+                    "overs": 20
+                  }
+                },
+                "team2Score": {
+                  "inngs1": {
+                    "inningsId": 2,
+                    "runs": 134,
+                    "wickets": 10,
+                    "overs": 18.5
+                  }
+                }
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 91506,
+                "seriesId": 7607,
+                "seriesName": "Indian Premier League 2024",
+                "matchDesc": "39th Match",
+                "matchFormat": "T20",
+                "startDate": "1713880800000",
+                "endDate": "1713893400000",
+                "state": "Complete",
+                "status": "Lucknow Super Giants won by 6 wkts",
+                "team1": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "team2": {
+                  "teamId": 966,
+                  "teamName": "Lucknow Super Giants",
+                  "teamSName": "LSG",
+                  "imageId": 389444
+                },
+                "venueInfo": {
+                  "id": 11,
+                  "ground": "MA Chidambaram Stadium",
+                  "city": "Chennai",
+                  "timezone": "+05:30"
+                },
+                "currBatTeamId": 966,
+                "seriesStartDt": "1711065600000",
+                "seriesEndDt": "1716854400000",
+                "isTimeAnnounced": true
+              },
+              "matchScore": {
+                "team1Score": {
+                  "inngs1": {
+                    "inningsId": 1,
+                    "runs": 210,
+                    "wickets": 4,
+                    "overs": 20
+                  }
+                },
+                "team2Score": {
+                  "inngs1": {
+                    "inningsId": 2,
+                    "runs": 213,
+                    "wickets": 4,
+                    "overs": 19.3
+                  }
+                }
+              }
+            }
+          ],
+          "seriesId": 7607
+        }
+      }
+    ]
+  }

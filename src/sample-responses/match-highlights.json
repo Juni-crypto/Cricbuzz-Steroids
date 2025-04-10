@@ -1,0 +1,425 @@
+{
+  "commentaryList": [
+    {
+      "commText": " Tushar Deshpande to Dhoni, B0$, slower bouncer outside off, Dhoni sends it on its way over short third for a boundary - opens the bat face and ramps it over the infield ",
+      "timestamp": 1743356751189,
+      "ballNbr": 109,
+      "overNumber": 18.1,
+      "inningsId": 2,
+      "event": "FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      }
+    },
+    {
+      "commText": " Sandeep Sharma to Jadeja, B0$, 127.9 clicks, back of length and angling across the batter, gets a bit of extra bounce. Jadeja adjusts well and dabs it between backward point and short third for a boundary ",
+      "timestamp": 1743356155315,
+      "ballNbr": 97,
+      "overNumber": 16.1,
+      "inningsId": 2,
+      "event": "FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      }
+    },
+    {
+      "commText": " Tushar Deshpande to Jadeja, B0$, wide yorker from Deshpande. Jadeja throws his bat at that and gets a thick outer edge that flies past short third for a boundary ",
+      "timestamp": 1743355486230,
+      "ballNbr": 87,
+      "overNumber": 14.3,
+      "inningsId": 2,
+      "event": "FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      }
+    },
+    {
+      "commText": " Theekshana to Gaikwad, B0$, fuller and slides onto middle stump, Gaikwad plants his front leg in front of off and sweeps this away expertly behind square for a boundary ",
+      "timestamp": 1743354966852,
+      "ballNbr": 79,
+      "overNumber": 13.1,
+      "inningsId": 2,
+      "event": "FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      }
+    },
+    {
+      "commText": " Kartikeya to Gaikwad, B0$, short and spinning away, anticipated by Gaikwad who flat bats it across the line to the right of deep mid-wicket for a boundary ",
+      "timestamp": 1743354293724,
+      "ballNbr": 66,
+      "overNumber": 10.6,
+      "inningsId": 2,
+      "event": "over-break,FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      },
+      "overSeparator": {
+        "score": 84,
+        "wickets": 3,
+        "inningsId": 2,
+        "o_summary": "4 1 1 0 0 4 ",
+        "runs": 10,
+        "batStrikerIds": [
+          11813
+        ],
+        "batStrikerNames": [
+          "Ruturaj Gaikwad"
+        ],
+        "batStrikerRuns": 40,
+        "batStrikerBalls": 30,
+        "batNonStrikerIds": [
+          8204
+        ],
+        "batNonStrikerNames": [
+          "Vijay Shankar"
+        ],
+        "batNonStrikerRuns": 2,
+        "batNonStrikerBalls": 3,
+        "bowlIds": [
+          14190
+        ],
+        "bowlNames": [
+          "Kumar Kartikeya"
+        ],
+        "bowlOvers": 1,
+        "bowlMaidens": 0,
+        "bowlRuns": 10,
+        "bowlWickets": 0,
+        "timestamp": 1743354293724,
+        "overNum": 10.6,
+        "batTeamName": "CSK",
+        "event": "over-break"
+      }
+    },
+    {
+      "commText": " Kartikeya to Gaikwad, B0$, top shot from Ruturaj!! Pierces the gap with precision. A flat delivery that is fizzed onto middle and leg, slapped across the line through cow corner for a boundary ",
+      "timestamp": 1743354145916,
+      "ballNbr": 61,
+      "overNumber": 10.1,
+      "inningsId": 2,
+      "event": "FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      }
+    },
+    {
+      "commText": " Hasaranga to Shivam Dube, B0$, a short of length delivery that slides onto middle and leg. Dube clears the front leg and heaves it away. Not off the middle but in the gap to the right of deep backward square leg ",
+      "timestamp": 1743353718799,
+      "ballNbr": 55,
+      "overNumber": 9.1,
+      "inningsId": 2,
+      "event": "FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      }
+    },
+    {
+      "commText": " Theekshana to Gaikwad, B0$, fuller and angles in towards off, almost like a medium pacer. Gaikwad looked to drive and gets an outside edge that runs away towards the third-man boundary ",
+      "timestamp": 1743353325181,
+      "ballNbr": 49,
+      "overNumber": 8.1,
+      "inningsId": 2,
+      "event": "FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      }
+    },
+    {
+      "commText": " Sandeep Sharma to Gaikwad, B0$, another freebie! Tried the yorker but bowled a low full toss. Thank you very much says Rutu as he saw fine leg up and just glanced it fine to the left of the man at 45 ",
+      "timestamp": 1743352624356,
+      "ballNbr": 35,
+      "overNumber": 5.5,
+      "inningsId": 2,
+      "event": "FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      }
+    },
+    {
+      "commText": " Sandeep Sharma to Gaikwad, B0$, bad ball! It cannot be even an inch outside off with this field, Sandeep. Everyone is up on the off-side, so Rutu camps back, picks the slower ball and slaps it hard from back of a length through cover-point. He cannot afford to offer width with long-on and deep square leg being the two deep fielders ",
+      "timestamp": 1743352550533,
+      "ballNbr": 33,
+      "overNumber": 5.3,
+      "inningsId": 2,
+      "event": "FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      }
+    },
+    {
+      "commText": " Sandeep Sharma to Gaikwad, B0$, man! He's just gone down on one knee and just swept the pacer for four like he'd play a spinner. Placed it well wide of the deep square leg fielder in place ",
+      "timestamp": 1743352510360,
+      "ballNbr": 32,
+      "overNumber": 5.2,
+      "inningsId": 2,
+      "event": "FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      }
+    },
+    {
+      "commText": " Jofra Archer to Tripathi, B0$, now shortish at pace, Tripathi gets inside the line and helps it away fine for four more along the ground ",
+      "timestamp": 1743352220399,
+      "ballNbr": 28,
+      "overNumber": 4.4,
+      "inningsId": 2,
+      "event": "FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      }
+    },
+    {
+      "commText": " Tushar Deshpande to Tripathi, B0$, now he's got inside the line to try and help the pull away fine. Gloves it, Jofra dives at short fine leg but it escapes to his right ",
+      "timestamp": 1743351990274,
+      "ballNbr": 24,
+      "overNumber": 3.6,
+      "inningsId": 2,
+      "event": "over-break,FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      },
+      "overSeparator": {
+        "score": 16,
+        "wickets": 1,
+        "inningsId": 2,
+        "o_summary": "0 3 0 0 4 4 ",
+        "runs": 11,
+        "batStrikerIds": [
+          9012
+        ],
+        "batStrikerNames": [
+          "Rahul Tripathi"
+        ],
+        "batStrikerRuns": 9,
+        "batStrikerBalls": 9,
+        "batNonStrikerIds": [
+          11813
+        ],
+        "batNonStrikerNames": [
+          "Ruturaj Gaikwad"
+        ],
+        "batNonStrikerRuns": 7,
+        "batNonStrikerBalls": 11,
+        "bowlIds": [
+          11307
+        ],
+        "bowlNames": [
+          "Tushar Deshpande"
+        ],
+        "bowlOvers": 2,
+        "bowlMaidens": 0,
+        "bowlRuns": 15,
+        "bowlWickets": 0,
+        "timestamp": 1743351990274,
+        "overNum": 3.6,
+        "batTeamName": "CSK",
+        "event": "over-break"
+      }
+    },
+    {
+      "commText": " Tushar Deshpande to Tripathi, B0$, shuffles and then gets back in line, Tushar offers width and Tripathi slices it uppishly and beats third man as well ",
+      "timestamp": 1743351952212,
+      "ballNbr": 23,
+      "overNumber": 3.5,
+      "inningsId": 2,
+      "event": "FOUR",
+      "batTeamName": "CSK",
+      "commentaryFormats": {
+        "bold": {
+          "formatId": [
+            "B0$"
+          ],
+          "formatValue": [
+            "FOUR"
+          ]
+        }
+      }
+    }
+  ],
+  "matchHeader": {
+    "matchId": 115030,
+    "matchDescription": "11th Match",
+    "matchFormat": "T20",
+    "matchType": "league",
+    "complete": true,
+    "domestic": false,
+    "matchStartTimestamp": 1743343200000,
+    "matchCompleteTimestamp": 1743357553956,
+    "dayNight": false,
+    "year": 2025,
+    "state": "Complete",
+    "status": "Chennai Super Kings opt to bowl",
+    "tossResults": {
+      "tossWinnerId": 58,
+      "tossWinnerName": "Chennai Super Kings",
+      "decision": "Bowling"
+    },
+    "result": {
+      "resultType": "win",
+      "winningTeam": "Rajasthan Royals",
+      "winningteamId": 64,
+      "winningMargin": 6,
+      "winByRuns": true,
+      "winByInnings": false
+    },
+    "revisedTarget": {
+      "reason": ""
+    },
+    "playersOfTheMatch": [
+      {
+        "id": 9204,
+        "name": "Nitish Rana",
+        "fullName": "Nitish Rana",
+        "nickName": "Nitish Rana",
+        "captain": false,
+        "keeper": false,
+        "substitute": false,
+        "teamName": "India",
+        "faceImageId": 171047
+      }
+    ],
+    "playersOfTheSeries": [],
+    "matchTeamInfo": [
+      {
+        "battingTeamId": 64,
+        "battingTeamShortName": "RR",
+        "bowlingTeamId": 58,
+        "bowlingTeamShortName": "CSK"
+      },
+      {
+        "battingTeamId": 58,
+        "battingTeamShortName": "CSK",
+        "bowlingTeamId": 64,
+        "bowlingTeamShortName": "RR"
+      }
+    ],
+    "isMatchNotCovered": false,
+    "team1": {
+      "id": 64,
+      "name": "Rajasthan Royals",
+      "playerDetails": [],
+      "shortName": "RR"
+    },
+    "team2": {
+      "id": 58,
+      "name": "Chennai Super Kings",
+      "playerDetails": [],
+      "shortName": "CSK"
+    },
+    "seriesDesc": "Indian Premier League 2025",
+    "seriesId": 9237,
+    "seriesName": "Indian Premier League 2025",
+    "alertType": "auto",
+    "livestreamEnabled": false
+  },
+  "commentarySnippetList": [],
+  "page": "highlights",
+  "enableNoContent": false,
+  "matchVideos": [],
+  "responseLastUpdated": 1743440923
+}

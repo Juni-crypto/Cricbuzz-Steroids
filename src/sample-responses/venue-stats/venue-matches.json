@@ -1,0 +1,223 @@
+{
+    "matchDetails": [
+      {
+        "matchDetailsMap": {
+          "key": "Indian Premier League 2025",
+          "match": [
+            {
+              "matchInfo": {
+                "matchId": 115140,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "29th Match",
+                "matchFormat": "T20",
+                "startDate": "1744552800000",
+                "endDate": "1744565400000",
+                "state": "Upcoming",
+                "status": "Match starts at Apr 13, 14:00 GMT",
+                "team1": {
+                  "teamId": 61,
+                  "teamName": "Delhi Capitals",
+                  "teamSName": "DC",
+                  "imageId": 225644
+                },
+                "team2": {
+                  "teamId": 62,
+                  "teamName": "Mumbai Indians",
+                  "teamSName": "MI",
+                  "imageId": 225645
+                },
+                "venueInfo": {
+                  "id": 51,
+                  "ground": "Arun Jaitley Stadium",
+                  "city": "Delhi",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115165,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "32nd Match",
+                "matchFormat": "T20",
+                "startDate": "1744812000000",
+                "endDate": "1744824600000",
+                "state": "Upcoming",
+                "status": "Match starts at Apr 16, 14:00 GMT",
+                "team1": {
+                  "teamId": 61,
+                  "teamName": "Delhi Capitals",
+                  "teamSName": "DC",
+                  "imageId": 225644
+                },
+                "team2": {
+                  "teamId": 64,
+                  "teamName": "Rajasthan Royals",
+                  "teamSName": "RR",
+                  "imageId": 225647
+                },
+                "venueInfo": {
+                  "id": 51,
+                  "ground": "Arun Jaitley Stadium",
+                  "city": "Delhi",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115257,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "46th Match",
+                "matchFormat": "T20",
+                "startDate": "1745762400000",
+                "endDate": "1745775000000",
+                "state": "Upcoming",
+                "status": "Match starts at Apr 27, 14:00 GMT",
+                "team1": {
+                  "teamId": 61,
+                  "teamName": "Delhi Capitals",
+                  "teamSName": "DC",
+                  "imageId": 225644
+                },
+                "team2": {
+                  "teamId": 59,
+                  "teamName": "Royal Challengers Bengaluru",
+                  "teamSName": "RCB",
+                  "imageId": 225643
+                },
+                "venueInfo": {
+                  "id": 51,
+                  "ground": "Arun Jaitley Stadium",
+                  "city": "Delhi",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115275,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "48th Match",
+                "matchFormat": "T20",
+                "startDate": "1745935200000",
+                "endDate": "1745947800000",
+                "state": "Upcoming",
+                "status": "Match starts at Apr 29, 14:00 GMT",
+                "team1": {
+                  "teamId": 61,
+                  "teamName": "Delhi Capitals",
+                  "teamSName": "DC",
+                  "imageId": 225644
+                },
+                "team2": {
+                  "teamId": 63,
+                  "teamName": "Kolkata Knight Riders",
+                  "teamSName": "KKR",
+                  "imageId": 225646
+                },
+                "venueInfo": {
+                  "id": 51,
+                  "ground": "Arun Jaitley Stadium",
+                  "city": "Delhi",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115372,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "62nd Match",
+                "matchFormat": "T20",
+                "startDate": "1746972000000",
+                "endDate": "1746984600000",
+                "state": "Upcoming",
+                "status": "Match starts at May 11, 14:00 GMT",
+                "team1": {
+                  "teamId": 61,
+                  "teamName": "Delhi Capitals",
+                  "teamSName": "DC",
+                  "imageId": 225644
+                },
+                "team2": {
+                  "teamId": 971,
+                  "teamName": "Gujarat Titans",
+                  "teamSName": "GT",
+                  "imageId": 235085
+                },
+                "venueInfo": {
+                  "id": 51,
+                  "ground": "Arun Jaitley Stadium",
+                  "city": "Delhi",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            }
+          ],
+          "seriesId": 9237
+        }
+      },
+      {
+        "matchDetailsMap": {
+          "key": "South Africa tour of India, 2025",
+          "match": [
+            {
+              "matchInfo": {
+                "matchId": 117371,
+                "seriesId": 9638,
+                "seriesName": "South Africa tour of India, 2025",
+                "matchDesc": "1st Test",
+                "matchFormat": "TEST",
+                "startDate": "1763092800000",
+                "endDate": "1763463600000",
+                "state": "Upcoming",
+                "team1": {
+                  "teamId": 2,
+                  "teamName": "India",
+                  "teamSName": "IND",
+                  "imageId": 172115
+                },
+                "team2": {
+                  "teamId": 11,
+                  "teamName": "South Africa",
+                  "teamSName": "RSA",
+                  "imageId": 172126
+                },
+                "venueInfo": {
+                  "id": 51,
+                  "ground": "Arun Jaitley Stadium",
+                  "city": "Delhi",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1763078400000",
+                "seriesEndDt": "1766275200000",
+                "isTimeAnnounced": true
+              }
+            }
+          ],
+          "seriesId": 9638
+        }
+      }
+    ]
+  }

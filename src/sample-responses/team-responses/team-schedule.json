@@ -1,0 +1,386 @@
+{
+    "teamMatchesData": [
+      {
+        "matchDetailsMap": {
+          "key": "Indian Premier League 2025",
+          "match": [
+            {
+              "matchInfo": {
+                "matchId": 115068,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "17th Match",
+                "matchFormat": "T20",
+                "startDate": "1743847200000",
+                "endDate": "1743859800000",
+                "state": "Upcoming",
+                "status": "Match starts at Apr 05, 10:00 GMT",
+                "team1": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "team2": {
+                  "teamId": 61,
+                  "teamName": "Delhi Capitals",
+                  "teamSName": "DC",
+                  "imageId": 225644
+                },
+                "venueInfo": {
+                  "id": 11,
+                  "ground": "MA Chidambaram Stadium",
+                  "city": "Chennai",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115102,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "22nd Match",
+                "matchFormat": "T20",
+                "startDate": "1744120800000",
+                "endDate": "1744133400000",
+                "state": "Upcoming",
+                "status": "Match starts at Apr 08, 14:00 GMT",
+                "team1": {
+                  "teamId": 65,
+                  "teamName": "Punjab Kings",
+                  "teamSName": "PBKS",
+                  "imageId": 225648
+                },
+                "team2": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "venueInfo": {
+                  "id": 851,
+                  "ground": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
+                  "city": "Chandigarh",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115113,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "25th Match",
+                "matchFormat": "T20",
+                "startDate": "1744380000000",
+                "endDate": "1744392600000",
+                "state": "Upcoming",
+                "status": "Match starts at Apr 11, 14:00 GMT",
+                "team1": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "team2": {
+                  "teamId": 63,
+                  "teamName": "Kolkata Knight Riders",
+                  "teamSName": "KKR",
+                  "imageId": 225646
+                },
+                "venueInfo": {
+                  "id": 11,
+                  "ground": "MA Chidambaram Stadium",
+                  "city": "Chennai",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115149,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "30th Match",
+                "matchFormat": "T20",
+                "startDate": "1744639200000",
+                "endDate": "1744651800000",
+                "state": "Upcoming",
+                "status": "Match starts at Apr 14, 14:00 GMT",
+                "team1": {
+                  "teamId": 966,
+                  "teamName": "Lucknow Super Giants",
+                  "teamSName": "LSG",
+                  "imageId": 389444
+                },
+                "team2": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "venueInfo": {
+                  "id": 485,
+                  "ground": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+                  "city": "Lucknow",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115201,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "38th Match",
+                "matchFormat": "T20",
+                "startDate": "1745157600000",
+                "endDate": "1745170200000",
+                "state": "Upcoming",
+                "status": "Match starts at Apr 20, 14:00 GMT",
+                "team1": {
+                  "teamId": 62,
+                  "teamName": "Mumbai Indians",
+                  "teamSName": "MI",
+                  "imageId": 225645
+                },
+                "team2": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "venueInfo": {
+                  "id": 81,
+                  "ground": "Wankhede Stadium",
+                  "city": "Mumbai",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115239,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "43rd Match",
+                "matchFormat": "T20",
+                "startDate": "1745589600000",
+                "endDate": "1745602200000",
+                "state": "Upcoming",
+                "status": "Match starts at Apr 25, 14:00 GMT",
+                "team1": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "team2": {
+                  "teamId": 255,
+                  "teamName": "Sunrisers Hyderabad",
+                  "teamSName": "SRH",
+                  "imageId": 225649
+                },
+                "venueInfo": {
+                  "id": 11,
+                  "ground": "MA Chidambaram Stadium",
+                  "city": "Chennai",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115282,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "49th Match",
+                "matchFormat": "T20",
+                "startDate": "1746021600000",
+                "endDate": "1746034200000",
+                "state": "Upcoming",
+                "status": "Match starts at Apr 30, 14:00 GMT",
+                "team1": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "team2": {
+                  "teamId": 65,
+                  "teamName": "Punjab Kings",
+                  "teamSName": "PBKS",
+                  "imageId": 225648
+                },
+                "venueInfo": {
+                  "id": 11,
+                  "ground": "MA Chidambaram Stadium",
+                  "city": "Chennai",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115302,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "52nd Match",
+                "matchFormat": "T20",
+                "startDate": "1746280800000",
+                "endDate": "1746293400000",
+                "state": "Upcoming",
+                "status": "Match starts at May 03, 14:00 GMT",
+                "team1": {
+                  "teamId": 59,
+                  "teamName": "Royal Challengers Bengaluru",
+                  "teamSName": "RCB",
+                  "imageId": 225643
+                },
+                "team2": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "venueInfo": {
+                  "id": 27,
+                  "ground": "M.Chinnaswamy Stadium",
+                  "city": "Bengaluru",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115345,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "57th Match",
+                "matchFormat": "T20",
+                "startDate": "1746626400000",
+                "endDate": "1746639000000",
+                "state": "Upcoming",
+                "status": "Match starts at May 07, 14:00 GMT",
+                "team1": {
+                  "teamId": 63,
+                  "teamName": "Kolkata Knight Riders",
+                  "teamSName": "KKR",
+                  "imageId": 225646
+                },
+                "team2": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "venueInfo": {
+                  "id": 31,
+                  "ground": "Eden Gardens",
+                  "city": "Kolkata",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115381,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "63rd Match",
+                "matchFormat": "T20",
+                "startDate": "1747058400000",
+                "endDate": "1747071000000",
+                "state": "Upcoming",
+                "status": "Match starts at May 12, 14:00 GMT",
+                "team1": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "team2": {
+                  "teamId": 64,
+                  "teamName": "Rajasthan Royals",
+                  "teamSName": "RR",
+                  "imageId": 225647
+                },
+                "venueInfo": {
+                  "id": 11,
+                  "ground": "MA Chidambaram Stadium",
+                  "city": "Chennai",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            },
+            {
+              "matchInfo": {
+                "matchId": 115426,
+                "seriesId": 9237,
+                "seriesName": "Indian Premier League 2025",
+                "matchDesc": "69th Match",
+                "matchFormat": "T20",
+                "startDate": "1747562400000",
+                "endDate": "1747575000000",
+                "state": "Upcoming",
+                "status": "Match starts at May 18, 10:00 GMT",
+                "team1": {
+                  "teamId": 971,
+                  "teamName": "Gujarat Titans",
+                  "teamSName": "GT",
+                  "imageId": 235085
+                },
+                "team2": {
+                  "teamId": 58,
+                  "teamName": "Chennai Super Kings",
+                  "teamSName": "CSK",
+                  "imageId": 225641
+                },
+                "venueInfo": {
+                  "id": 50,
+                  "ground": "Narendra Modi Stadium",
+                  "city": "Ahmedabad",
+                  "timezone": "+05:30"
+                },
+                "seriesStartDt": "1742601600000",
+                "seriesEndDt": "1748304000000",
+                "isTimeAnnounced": true
+              }
+            }
+          ],
+          "seriesId": 9237
+        }
+      }
+    ]
+  }

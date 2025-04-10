@@ -1,0 +1,36 @@
+{
+    "venueStats": [
+      {
+        "key": "Total Matches",
+        "value": "37"
+      },
+      {
+        "key": "Matches won batting first",
+        "value": "6"
+      },
+      {
+        "key": "Matches won bowling first",
+        "value": "14"
+      },
+      {
+        "key": "Avg. scores recorded",
+        "value": "1st inns-340\n2nd inns-315\n3rd inns-315\n4th inns-163"
+      },
+      {
+        "key": "Highest total recorded",
+        "value": "644/8(214.0) by WI vs IND"
+      },
+      {
+        "key": "Lowest total recorded",
+        "value": "75/10(30.5) by IND vs WI"
+      },
+      {
+        "key": "Highest score chased",
+        "value": "276/5(80.4) by IND vs WI"
+      },
+      {
+        "key": "Lowest score defended",
+        "value": "207/10(60.3) by PAK vs IND"
+      }
+    ]
+  }

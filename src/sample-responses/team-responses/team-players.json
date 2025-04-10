@@ -1,0 +1,193 @@
+{
+    "player": [
+      {
+        "name": "BATSMEN",
+        "imageId": 174146
+      },
+      {
+        "id": "11813",
+        "name": "Ruturaj Gaikwad",
+        "imageId": 333874,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm offbreak"
+      },
+      {
+        "id": "22571",
+        "name": "Shaik Rasheed",
+        "imageId": 594287,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm legbreak"
+      },
+      {
+        "id": "1427488",
+        "name": "Andre Siddarth C",
+        "imageId": 174146,
+        "battingStyle": "Right-hand bat"
+      },
+      {
+        "id": "9012",
+        "name": "Rahul Tripathi",
+        "imageId": 594322,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm medium"
+      },
+      {
+        "name": "ALL ROUNDER",
+        "imageId": 174146
+      },
+      {
+        "id": "11195",
+        "name": "Shivam Dube",
+        "imageId": 593805,
+        "battingStyle": "Left-hand bat",
+        "bowlingStyle": "Right-arm medium"
+      },
+      {
+        "id": "8204",
+        "name": "Vijay Shankar",
+        "imageId": 170664,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm medium"
+      },
+      {
+        "id": "9427",
+        "name": "Deepak Hooda",
+        "imageId": 244970,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm offbreak"
+      },
+      {
+        "id": "11177",
+        "name": "Rachin Ravindra",
+        "imageId": 351609,
+        "battingStyle": "Left-hand bat",
+        "bowlingStyle": "Left-arm orthodox"
+      },
+      {
+        "id": "32835",
+        "name": "Ramakrishna Ghosh",
+        "imageId": 174146,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm fast-medium"
+      },
+      {
+        "id": "587",
+        "name": "Ravindra Jadeja",
+        "imageId": 616520,
+        "battingStyle": "Left-hand bat",
+        "bowlingStyle": "Left-arm orthodox"
+      },
+      {
+        "id": "14598",
+        "name": "Anshul Kamboj",
+        "imageId": 174146,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm fast-medium"
+      },
+      {
+        "id": "1593",
+        "name": "Ravichandran Ashwin",
+        "imageId": 591961,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm offbreak"
+      },
+      {
+        "id": "10420",
+        "name": "Sam Curran",
+        "imageId": 351581,
+        "battingStyle": "Left-hand bat",
+        "bowlingStyle": "Left-arm fast-medium"
+      },
+      {
+        "name": "WICKET KEEPER",
+        "imageId": 174146
+      },
+      {
+        "id": "9838",
+        "name": "Devon Conway",
+        "imageId": 616434,
+        "battingStyle": "Left-hand bat",
+        "bowlingStyle": "Right-arm medium"
+      },
+      {
+        "id": "265",
+        "name": "MS Dhoni",
+        "imageId": 170677,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm medium"
+      },
+      {
+        "id": "1429626",
+        "name": "Vansh Bedi",
+        "imageId": 174146,
+        "battingStyle": "Right-hand bat"
+      },
+      {
+        "name": "BOWLER",
+        "imageId": 174146
+      },
+      {
+        "id": "8512",
+        "name": "Jamie Overton",
+        "imageId": 617410,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm fast"
+      },
+      {
+        "id": "12092",
+        "name": "Kamlesh Nagarkoti",
+        "imageId": 226313,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm fast"
+      },
+      {
+        "id": "16458",
+        "name": "Matheesha Pathirana",
+        "imageId": 351888,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm fast"
+      },
+      {
+        "id": "9746",
+        "name": "Shreyas Gopal",
+        "imageId": 226505,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm legbreak"
+      },
+      {
+        "id": "13184",
+        "name": "Mukesh Choudhary",
+        "imageId": 174146,
+        "battingStyle": "Left-hand bat",
+        "bowlingStyle": "Left-arm fast-medium"
+      },
+      {
+        "id": "15480",
+        "name": "Nathan Ellis",
+        "imageId": 619885,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Right-arm fast-medium"
+      },
+      {
+        "id": "19807",
+        "name": "Gurjapneet Singh",
+        "imageId": 174146,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Left-arm fast-medium"
+      },
+      {
+        "id": "15452",
+        "name": "Noor Ahmad",
+        "imageId": 616569,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Left-arm wrist-spin"
+      },
+      {
+        "id": "10952",
+        "name": "Khaleel Ahmed",
+        "imageId": 171017,
+        "battingStyle": "Right-hand bat",
+        "bowlingStyle": "Left-arm fast-medium"
+      }
+    ]
+  }

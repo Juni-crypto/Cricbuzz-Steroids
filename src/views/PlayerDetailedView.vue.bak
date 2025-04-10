@@ -1,0 +1,1963 @@
+<!-- PlayerDetailedView.vue -->
+<template>
+  <div class="container mx-auto px-4 py-8 space-y-8">
+    <!-- Animated Background Particles -->
+    <div class="fixed inset-0 -z-10">
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900/30"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-500/10 via-transparent to-transparent"></div>
+      <div v-for="i in 10" :key="i" 
+           class="particle absolute rounded-full" 
+           :style="`
+             width: ${Math.random() * 4 + 2}px; 
+             height: ${Math.random() * 4 + 2}px; 
+             background: rgba(99, 102, 241, ${Math.random() * 0.3}); 
+             left: ${Math.random() * 100}%; 
+             top: ${Math.random() * 100}%; 
+             animation: float ${Math.random() * 15 + 15}s linear infinite;
+           `">
+      </div>
+    </div>
+    
+    <!-- Animated Back Button with Pulse Effect -->
+    <button @click="router.back()" 
+            class="flex items-center space-x-2 px-4 py-2 rounded-full bg-indigo-600/10 backdrop-blur-sm text-indigo-400 hover:text-indigo-300 mb-6 group transition-all duration-300 hover:translate-x-1 hover:shadow-lg hover:shadow-indigo-600/20 relative overflow-hidden">
+      <span class="absolute inset-0 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 pulse-animation"></span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:rotate-180 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      <span class="relative z-10">Back to Players</span>
+    </button>
+
+    <!-- Futuristic Loading State -->
+    <div v-if="loading" class="flex justify-center items-center min-h-[300px]">
+      <div class="relative flex flex-col items-center">
+        <div class="w-16 h-16 border-t-4 border-b-4 border-indigo-500 rounded-full animate-spin"></div>
+        <div class="mt-4 text-indigo-400 font-medium">Loading player data...</div>
+      </div>
+    </div>
+
+    <!-- Error State with Glitch Effect -->
+    <div v-else-if="error" 
+         class="bg-red-900/20 backdrop-blur-lg border border-red-500/30 rounded-lg p-8 text-center animate-fade-in shadow-xl shadow-red-600/10 relative overflow-hidden">
+      <div class="glitch" data-text="Error">Error</div>
+      <div class="text-red-400 text-xl mb-4 max-w-xl mx-auto">{{ error }}</div>
+      <button @click="fetchPlayerData" 
+              class="px-6 py-2 bg-indigo-600/20 hover:bg-indigo-600/30 border border-indigo-500/30 rounded-full text-indigo-400 hover:text-indigo-300 transition-all duration-300 hover:scale-105 shadow-lg shadow-indigo-600/10">
+        Try Again
+      </button>
+      <div class="absolute inset-0 glitch-scan"></div>
+    </div>
+
+    <!-- Player Content -->
+    <template v-else-if="player">
+      <!-- Player Header with 3D Card Design -->
+      <div class="perspective">
+        <div class="player-card transform-style-3d relative transition-all duration-500 shadow-2xl rounded-2xl">
+          <div class="gradient-background absolute inset-0 rounded-2xl opacity-80 z-0"></div>
+          <div class="player-card-inner p-8 relative z-10 backdrop-blur-xl">
+            <div class="player-header-grid">
+              <!-- Player Avatar with Animated Border -->
+              <div class="player-avatar">
+                <div class="avatar-border"></div>
+                <div class="avatar-wrapper overflow-hidden rounded-2xl relative group">
+                  <img :src="`http://static.cricbuzz.com/a/img/v1/i1/c${player.faceImageId}/i.jpg?p=medium`"
+                      :alt="player.name"
+                      class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                </div>
+                <div class="absolute bottom-4 left-4 z-20">
+                  <div class="flex space-x-2">
+                    <span class="px-3 py-1 text-xs rounded-full bg-indigo-500/20 backdrop-blur-sm text-white font-medium">
+                      {{ getPlayerRole() }}
+                    </span>
+                    <span v-if="player.bat" class="px-3 py-1 text-xs rounded-full bg-emerald-500/20 backdrop-blur-sm text-white font-medium">
+                      {{ player.bat }}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Player Details with Gradient Text -->
+              <div class="player-details">
+                <h1 class="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white to-indigo-300 player-name-animation">
+                  {{ player.name }}
+                </h1>
+                
+                <div class="player-data-grid">
+                  <div v-for="(info, index) in playerBasicInfo" :key="index"
+                      class="player-data-item group">
+                    <div class="player-data-icon">
+                      <component :is="info.icon" class="h-6 w-6 text-indigo-400" />
+                    </div>
+                    <div class="player-data-content">
+                      <div class="player-data-label">{{ info.label }}</div>
+                      <div class="player-data-value">{{ info.text }}</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Quick Stats with Animated Bars -->
+                <div class="mt-6">
+                  <h3 class="text-indigo-300 font-medium mb-3 flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span>Career Highlights</span>
+                  </h3>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div v-for="(stat, index) in careerHighlights" :key="index" 
+                        class="stat-card group">
+                      <div class="stat-icon">{{ stat.icon }}</div>
+                      <div class="stat-content">
+                        <div class="stat-value">{{ stat.value }}</div>
+                        <div class="stat-label">{{ stat.label }}</div>
+                      </div>
+                      <div class="stat-bar">
+                        <div class="stat-progress" :style="`width: ${stat.percentage}%`"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Animated Player Tags -->
+            <div class="player-tags-container">
+              <div class="player-tags-scroll">
+                <div v-for="tag in getPlayerTags()" :key="tag" 
+                    class="player-tag">
+                  {{ tag }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Dashboard -->
+      <div class="stats-dashboard my-8">
+        <div class="dashboard-header">
+          <h2 class="dashboard-title">
+            Performance Dashboard
+            <span class="dashboard-pill">LIVE DATA</span>
+          </h2>
+          <p class="dashboard-subtitle">Comprehensive analysis of player rankings and statistics</p>
+        </div>
+        
+        <div class="dashboard-grid">
+          <!-- ICC Rankings with Radar Chart -->
+          <div class="dashboard-card ranking-card">
+            <div class="card-header">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <div class="card-title">ICC Rankings</div>
+            </div>
+            
+            <div class="card-content p-0">
+              <!-- Simplified ranking display -->
+              <div class="rankings-tabs">
+                <div class="tabs-header">
+                  <button 
+                    v-for="(category, idx) in rankingCategories" 
+                    :key="idx"
+                    class="ranking-tab-btn" 
+                    :class="{'active': idx === 0}"
+                  >
+                    {{ category.name }}
+                  </button>
+                </div>
+                
+                <div class="tabs-content p-4">
+                  <!-- T20 Rankings -->
+                  <div class="ranking-summary-grid">
+                    <div v-for="(category, idx) in rankingCategories" :key="idx" class="ranking-summary-card">
+                      <div class="ranking-category-name">{{ category.name }}</div>
+                      
+                      <!-- Get and display T20 ranking if available -->
+                      <div v-if="player.rankings && player.rankings[category.key] && player.rankings[category.key].t20Rank" 
+                           class="ranking-value">
+                        <span class="ranking-number">{{ player.rankings[category.key].t20Rank }}</span>
+                        <span class="ranking-format">T20</span>
+                      </div>
+                      <div v-else class="ranking-value">
+                        <span class="ranking-number">--</span>
+                        <span class="ranking-format">T20</span>
+                      </div>
+                      
+                      <!-- Get and display ODI ranking if available -->
+                      <div v-if="player.rankings && player.rankings[category.key] && player.rankings[category.key].odiRank" 
+                           class="ranking-value">
+                        <span class="ranking-number">{{ player.rankings[category.key].odiRank }}</span>
+                        <span class="ranking-format">ODI</span>
+                      </div>
+                      <div v-else class="ranking-value">
+                        <span class="ranking-number">--</span>
+                        <span class="ranking-format">ODI</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Current Best Rankings -->
+                  <div class="mt-6">
+                    <div class="section-heading">Best Rankings</div>
+                    <div class="ranking-list">
+                      <div v-for="(category, catIdx) in rankingCategories" :key="`cat-${catIdx}`">
+                        <div v-for="(value, key) in getBestRankings(category.key)" :key="`${catIdx}-${key}`" 
+                             class="best-ranking-item">
+                          <div class="best-ranking-format">{{ formatRankingKey(key) }}</div>
+                          <div class="best-ranking-number">#{{ value }}</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Teams & Career Card -->
+          <div class="dashboard-card teams-card">
+            <div class="card-header">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <div class="card-title">Teams & Career</div>
+            </div>
+            
+            <div class="card-content">
+              <!-- Teams Showcase -->
+              <div class="teams-showcase">
+                <div class="teams-grid">
+                  <div 
+                    v-for="team in player.teamNameIds" 
+                    :key="team.teamId"
+                    class="team-card"
+                    :style="{
+                      '--team-hue': getHue(team.teamId),
+                      borderColor: `hsl(var(--team-hue), 70%, 50%)`
+                    }"
+                  >
+                    <span class="team-id" :style="{backgroundColor: `hsl(var(--team-hue), 70%, 50%)`}">
+                      {{ team.teamId }}
+                    </span>
+                    <div class="team-name" :style="{color: `hsl(var(--team-hue), 70%, 40%)`}">
+                      {{ team.teamName }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Career Timeline -->
+              <div class="career-timeline">
+                <h3 class="timeline-title">Career Timeline</h3>
+                
+                <div class="timeline-container">
+                  <div 
+                    v-for="(event, index) in careerEvents" 
+                    :key="index" 
+                    class="timeline-event"
+                    :class="{'right-event': index % 2 === 1}"
+                  >
+                    <div class="event-date">{{ event.date }}</div>
+                    <div class="event-content">{{ event.content }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Biography Section -->
+      <div class="biography-section">
+        <div class="bio-container">
+          <div class="bio-header">
+            <div class="bio-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <div class="bio-title">Biography</div>
+            <button @click="expandBio = !expandBio" class="bio-expand-btn">
+              {{ expandBio ? 'Show Less' : 'Show More' }}
+            </button>
+          </div>
+          
+          <div class="bio-content-wrapper">
+            <div class="bio-content">
+              <!-- Condensed biography that's always visible -->
+              <div class="bio-summary">
+                <p class="bio-summary-text">{{ getSummaryBio(player.bio) }}</p>
+              </div>
+              
+              <!-- Full biography that's expandable -->
+              <div v-if="expandBio" class="bio-full-text mt-4">
+                <div v-html="player.bio" class="prose prose-sm prose-invert max-w-none"></div>
+              </div>
+              
+              <!-- Key info pills -->
+              <div class="bio-key-info">
+                <div v-for="(tag, idx) in bioHighlights" :key="idx" class="bio-pill">
+                  {{ tag }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+  </div>
+</template>
+
+<script setup>
+import { ref, onMounted, watch, computed } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import playerInfo from '../sample-responses/player-detail/player-info.json'
+
+const route = useRoute()
+const router = useRouter()
+const player = ref(null)
+const loading = ref(true)
+const error = ref(null)
+const expandBio = ref(false)
+
+// SVG Components
+const SvgRole = {
+  template: `
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+    </svg>
+  `
+}
+
+const SvgLocation = {
+  template: `
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+  `
+}
+
+const SvgCalendar = {
+  template: `
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>
+  `
+}
+
+const SvgFlag = {
+  template: `
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+    </svg>
+  `
+}
+
+const SvgBatting = {
+  template: `
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+    </svg>
+  `
+}
+
+const SvgBowling = {
+  template: `
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  `
+}
+
+const SvgAllrounder = {
+  template: `
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  `
+}
+
+// Register components
+const components = {
+  'svg-role': SvgRole,
+  'svg-location': SvgLocation,
+  'svg-calendar': SvgCalendar,
+  'svg-flag': SvgFlag,
+  'svg-batting': SvgBatting,
+  'svg-bowling': SvgBowling,
+  'svg-allrounder': SvgAllrounder
+}
+
+// Make components available in the template
+Object.entries(components).forEach(([name, component]) => {
+  component.__name = name
+  component.__file = 'virtual:' + name
+})
+
+// Computed properties for player information
+const playerBasicInfo = computed(() => [
+  {
+    icon: 'svg-role',
+    label: 'Role',
+    text: player.value?.role || 'Unknown'
+  },
+  {
+    icon: 'svg-location',
+    label: 'Born in',
+    text: player.value?.birthPlace || 'Unknown'
+  },
+  {
+    icon: 'svg-calendar',
+    label: 'Date of Birth',
+    text: player.value?.DoB || 'Unknown'
+  },
+  {
+    icon: 'svg-flag',
+    label: 'International',
+    text: player.value?.intlTeam || 'Unknown'
+  }
+])
+
+const playerStats = computed(() => [
+  {
+    label: 'Batting Style',
+    value: player.value?.bat || 'Unknown'
+  },
+  {
+    label: 'Bowling Style',
+    value: player.value?.bowl || 'Unknown'
+  },
+  {
+    label: 'International Team',
+    value: player.value?.intlTeam || 'Unknown'
+  },
+  {
+    label: 'Teams',
+    value: player.value?.teams || 'Unknown'
+  }
+])
+
+const careerHighlights = computed(() => {
+  if (!player.value) return []
+  
+  // Only use data actually available in player-info.json
+  return [
+    {
+      icon: '🏏',
+      label: 'Batting',
+      value: player.value.bat || 'Unknown',
+      percentage: 70
+    },
+    {
+      icon: '🎯',
+      label: 'Bowling',
+      value: player.value.bowl || 'Unknown',
+      percentage: 65
+    },
+    {
+      icon: '👤',
+      label: 'Role',
+      value: player.value.role || 'Unknown',
+      percentage: 80
+    },
+    {
+      icon: '🌍',
+      label: 'Team',
+      value: player.value.intlTeam || 'Unknown',
+      percentage: 75
+    }
+  ]
+})
+
+const rankingCategories = [
+  {
+    name: 'Batting',
+    key: 'bat',
+    icon: 'svg-batting'
+  },
+  {
+    name: 'Bowling',
+    key: 'bowl',
+    icon: 'svg-bowling'
+  },
+  {
+    name: 'All-Rounder',
+    key: 'all',
+    icon: 'svg-allrounder'
+  }
+]
+
+const radarChartData = computed(() => {
+  if (!player.value || !player.value.rankings) {
+    return Array(8).fill().map((_, i) => ({ angle: i * 45, value: 50 }))
+  }
+  
+  // Use T20 ranking data where available
+  const t20BatRank = parseInt(player.value.rankings.bat?.t20Rank || '100')
+  const t20BowlRank = parseInt(player.value.rankings.bowl?.t20Rank || '100')
+  const t20AllRank = parseInt(player.value.rankings.all?.t20Rank || '100')
+  
+  // Convert rankings to values (lower rank = higher value)
+  const batValue = Math.max(10, Math.min(90, 100 - t20BatRank))
+  const bowlValue = Math.max(10, Math.min(90, 100 - t20BowlRank))
+  const allValue = Math.max(10, Math.min(90, 100 - t20AllRank))
+  
+  // Use real data for the main categories and average values for others
+  return [
+    { angle: 0, value: batValue }, // Batting
+    { angle: 45, value: (batValue + allValue) / 2 }, // Power
+    { angle: 90, value: bowlValue }, // Bowling
+    { angle: 135, value: allValue }, // All-Rounder
+    { angle: 180, value: allValue }, // Leadership
+    { angle: 225, value: (batValue + bowlValue) / 2 }, // Experience
+    { angle: 270, value: (bowlValue + allValue) / 2 }, // Fitness
+    { angle: 315, value: (batValue + allValue) / 2 } // Form
+  ]
+})
+
+const radarAreaPath = computed(() => {
+  const center = 100
+  const points = radarChartData.value.map(point => {
+    const radians = (point.angle - 90) * Math.PI / 180
+    const x = center + (point.value * 0.9) * Math.cos(radians)
+    const y = center + (point.value * 0.9) * Math.sin(radians)
+    return `${x},${y}`
+  })
+  
+  return `M${points.join(' L')} Z`
+})
+
+const radarLabels = computed(() => {
+  return ['Batting', 'Power', 'Consistency', 'Technique', 'Leadership', 'Experience', 'Fitness', 'Form']
+})
+
+const careerEvents = computed(() => {
+  if (!player.value || !player.value.bio) return [];
+  
+  // Extract career events from player biography text
+  return extractCareerEventsFromBio(player.value.bio);
+})
+
+// Function to automatically extract career events from player biography
+const extractCareerEventsFromBio = (bioText) => {
+  if (!bioText) return [];
+  
+  // Remove HTML tags to get plain text
+  const plainText = bioText.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+  
+  // Regular expressions to find years and significant events
+  const yearPattern = /\b(19[8-9][0-9]|20[0-2][0-9])\b/g;
+  const years = [...plainText.matchAll(yearPattern)];
+  
+  const events = [];
+  
+  // Keywords that indicate significant career events
+  const significantKeywords = [
+    'World Cup', 'IPL', 'trophy', 'debut', 'captain', 
+    'appointed', 'named', 'joined', 'signed', 'selected', 
+    'award', 'won', 'finals', 'triumph', 'victory', 
+    'championship', 'injured', 'scored', 'performance',
+    'century', 'fifty', 'wicket', 'all-rounder'
+  ];
+  
+  // For each year found, extract the surrounding context
+  years.forEach(yearMatch => {
+    const year = yearMatch[0];
+    const yearIndex = yearMatch.index;
+    
+    // Get text around the year (50 chars before and 100 chars after)
+    let startIndex = Math.max(0, yearIndex - 50);
+    let endIndex = Math.min(plainText.length, yearIndex + 100);
+    let context = plainText.substring(startIndex, endIndex);
+    
+    // Check if this context contains any significant keywords
+    const hasSignificantEvent = significantKeywords.some(keyword => 
+      context.toLowerCase().includes(keyword.toLowerCase())
+    );
+    
+    if (hasSignificantEvent) {
+      // Find a sentence boundary to create a more natural context
+      let content = context;
+      
+      // Try to extract just the relevant sentence by finding periods
+      const sentenceBoundaries = [...content.matchAll(/\./g)];
+      if (sentenceBoundaries.length > 0) {
+        // Find the sentence containing the year
+        for (let i = 0; i < sentenceBoundaries.length - 1; i++) {
+          if (sentenceBoundaries[i].index < (yearIndex - startIndex) && 
+              (yearIndex - startIndex) < sentenceBoundaries[i+1].index) {
+            content = content.substring(
+              sentenceBoundaries[i].index + 1, 
+              sentenceBoundaries[i+1].index + 1
+            ).trim();
+            break;
+          }
+        }
+      }
+      
+      // Make sure content is not too long
+      if (content.length > 100) {
+        content = content.substring(0, 97) + '...';
+      }
+      
+      // Clean up the content
+      content = content.trim();
+      
+      // Avoid duplicate events for the same year
+      if (!events.some(event => event.date === year && event.content === content)) {
+        events.push({
+          date: year,
+          content: content
+        });
+      }
+    }
+  });
+  
+  // Sort events chronologically (most recent first)
+  events.sort((a, b) => parseInt(b.date) - parseInt(a.date));
+  
+  // Limit to 6 most significant events
+  return events.slice(0, 6);
+};
+
+const getHue = (id) => {
+  // Generate consistent color based on teamId
+  const numId = parseInt(id) || 0;
+  return (numId * 40) % 360; // This creates a variety of colors across the spectrum
+}
+
+const bioKeywords = computed(() => {
+  if (!player.value || !player.value.bio) return []
+  
+  // Extract real keywords from the bio text
+  const keyPhrases = [
+    'Hardik Pandya', 'Gujarat', 'all-rounder', 'IPL', 'Mumbai Indians', 
+    'Kapil Dev', 'World Cup', 'India', 'T20', 'ODI', 
+    'Gujarat Titans', 'captain', 'fast bowling'
+  ]
+  
+  return keyPhrases.map((text, index) => ({
+    text,
+    size: 14 + (Math.abs(Math.sin(index)) * 14),
+    top: 10 + (index % 7) * 12,
+    left: 10 + (index % 5) * 18
+  }))
+})
+
+const formatRankingKey = (key) => {
+  const formats = {
+    'odiRank': 'ODI',
+    't20Rank': 'T20I',
+    'testBestRank': 'Test (Best)',
+    'odiBestRank': 'ODI (Best)',
+    't20BestRank': 'T20I (Best)',
+    't20DiffRank': 'T20I (Diff)'
+  }
+  return formats[key] || key
+}
+
+const getPlayerRole = () => {
+  const role = player.value?.role
+  if (!role) return 'Player'
+  
+  // Capitalize first letter of each word
+  return role.split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ')
+}
+
+const getPlayerTags = () => {
+  if (!player.value) return []
+  
+  const tags = []
+  
+  if (player.value.bat) tags.push(player.value.bat + ' Batsman')
+  if (player.value.bowl) tags.push(player.value.bowl + ' Bowler')
+  if (player.value.intlTeam) tags.push(player.value.intlTeam)
+  if (player.value.teamNameIds && player.value.teamNameIds.length > 0) {
+    player.value.teamNameIds.forEach(team => tags.push(team.teamName))
+  }
+  
+  return tags
+}
+
+const getTopRankings = (category) => {
+  if (!player.value || !player.value.rankings || !player.value.rankings[category]) return {}
+  
+  // Get top 3 rankings
+  const rankings = player.value.rankings[category]
+  const entries = Object.entries(rankings)
+  
+  // Sort by numeric value (ascending since lower rank is better)
+  entries.sort((a, b) => Number(a[1]) - Number(b[1]))
+  
+  // Take top 3
+  const topEntries = entries.slice(0, 3)
+  
+  // Convert back to object
+  return Object.fromEntries(topEntries)
+}
+
+const getRankingPercentage = (value) => {
+  // Assume lower is better (rank 1 is 100%)
+  // Invert scale for visualization
+  const numValue = parseInt(value) || 100
+  return Math.max(10, Math.min(100, 100 - numValue + 1))
+}
+
+const formatBioContent = (content) => {
+  if (!content) return ''
+  
+  // Split by paragraphs
+  const paragraphs = content.split('</p><p>')
+  
+  // Add fade-in animation and enhance first paragraph
+  let formatted = paragraphs.map((para, index) => {
+    // Clean up paragraph tags
+    para = para.replace(/<\/?p>/g, '')
+    
+    if (index === 0) {
+      // Enhance first paragraph
+      const words = para.split(' ')
+      const firstSentence = words.slice(0, 15).join(' ')
+      const restOfPara = words.slice(15).join(' ')
+      
+      return `<p class="first-paragraph">
+                <span class="first-sentence">${firstSentence}</span>
+                ${restOfPara}
+              </p>`
+    }
+    
+    return `<p class="fade-in-para" style="animation-delay: ${index * 0.2}s">${para}</p>`
+  }).join('')
+  
+  // Bold key phrases (example)
+  formatted = formatted.replace(/World Cup/g, '<b class="highlight">World Cup</b>')
+  formatted = formatted.replace(/century/g, '<b class="highlight">century</b>')
+  formatted = formatted.replace(/captain/g, '<b class="highlight">captain</b>')
+  
+  return formatted
+}
+
+const getBestRankings = (category) => {
+  if (!player.value || !player.value.rankings || !player.value.rankings[category]) return {}
+  
+  // Get only "Best" rankings
+  const rankings = player.value.rankings[category]
+  const bestRankings = {}
+  
+  for (const [key, value] of Object.entries(rankings)) {
+    if (key.includes('Best')) {
+      bestRankings[key] = value
+    }
+  }
+  
+  return bestRankings
+}
+
+const fetchPlayerData = async () => {
+  loading.value = true
+  error.value = null
+  
+  try {
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    player.value = playerInfo
+  } catch (err) {
+    error.value = 'Failed to load player data. Please try again later.'
+    console.error('Error fetching player data:', err)
+  } finally {
+    loading.value = false
+  }
+}
+
+watch(() => route.params.id, () => {
+  fetchPlayerData()
+})
+
+onMounted(() => {
+  fetchPlayerData()
+})
+
+const getSummaryBio = (bio) => {
+  if (!bio) return ''
+  // Strip HTML tags and get first 200 characters
+  const plainText = bio.replace(/<[^>]+>/g, ' ')
+  return plainText.substring(0, 200) + '...'
+}
+
+const bioHighlights = computed(() => {
+  if (!player.value) return []
+  
+  return [
+    player.value.intlTeam,
+    player.value.role,
+    player.value.bat,
+    player.value.bowl,
+    player.value.birthPlace
+  ].filter(Boolean)
+})
+</script>
+
+<style scoped>
+/* Modern Base Styles */
+:root {
+  --primary: rgb(99, 102, 241);
+  --primary-light: rgba(99, 102, 241, 0.2);
+  --primary-dark: rgb(67, 56, 202);
+  --secondary: rgb(139, 92, 246);
+  --accent: rgb(249, 115, 22);
+  --text-light: rgb(226, 232, 240);
+  --text-dark: rgb(15, 23, 42);
+  --bg-dark: rgb(15, 23, 42);
+  --card-bg: rgba(30, 41, 59, 0.7);
+}
+
+/* Background Particles Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(100vw);
+    opacity: 0;
+  }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.pulse-animation {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* Loading Spinner */
+.spinner-galaxy {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  transform-style: preserve-3d;
+  perspective: 800px;
+}
+
+.spinner-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(calc(var(--i) * 45deg)) rotateX(calc(var(--i) * 15deg));
+  width: calc(100% - var(--i) * 10px);
+  height: calc(100% - var(--i) * 10px);
+  border: 2px solid rgba(99, 102, 241, calc(0.2 + var(--i) * 0.1));
+  border-radius: 50%;
+  animation: spin calc(5s + var(--i) * 0.5s) linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0) rotateY(calc(var(--i) * 45deg)) rotateX(calc(var(--i) * 15deg));
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg) rotateY(calc(var(--i) * 45deg)) rotateX(calc(var(--i) * 15deg));
+  }
+}
+
+/* Typewriter Animation */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--primary);
+  animation: typing 3s steps(30) infinite alternate, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/* Glitch Effect */
+.glitch {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: 0.05em 0 0 rgba(255,0,0,0.75), -0.05em -0.025em 0 rgba(0,255,0,0.75), 0.025em 0.05em 0 rgba(0,0,255,0.75);
+  animation: glitch 500ms infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 red;
+  animation: glitch-animation 1s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  left: -2px;
+  text-shadow: 2px 0 blue;
+  animation: glitch-animation 0.7s infinite linear alternate-reverse;
+}
+
+.glitch-scan {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  height: 4px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  animation: scan 4s ease-in-out infinite;
+}
+
+@keyframes scan {
+  0% { top: 0%; }
+  50% { top: 95%; }
+  100% { top: 0%; }
+}
+
+@keyframes glitch-animation {
+  to {
+    transform: translate(2px, 2px);
+  }
+}
+
+/* 3D Card Styles */
+.perspective {
+  perspective: 2000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.player-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: rotateX(5deg);
+}
+
+.player-card:hover {
+  transform: rotateX(0deg);
+  box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.25);
+}
+
+.gradient-background {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(139, 92, 246, 0.3), rgba(249, 115, 22, 0.3));
+  filter: blur(50px);
+}
+
+.player-header-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+}
+
+.player-avatar {
+  position: relative;
+  width: 100%;
+  height: 360px;
+}
+
+.avatar-border {
+  position: absolute;
+  inset: -5px;
+  border: 2px solid rgba(99, 102, 241, 0.3);
+  border-radius: inherit;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.5), transparent);
+  background-size: 200% 100%;
+  animation: border-flow 3s linear infinite;
+  z-index: 10;
+}
+
+@keyframes border-flow {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.avatar-wrapper {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+.player-details {
+  padding: 0.5rem 0;
+}
+
+.player-name-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.player-name-animation::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transition: width 0.5s ease;
+}
+
+.player-details:hover .player-name-animation::after {
+  width: 100%;
+}
+
+.player-data-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.player-data-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  transition: all 0.3s ease;
+}
+
+.player-data-item:hover {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(99, 102, 241, 0.3);
+  transform: translateY(-2px);
+}
+
+.player-data-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.player-data-content {
+  flex: 1;
+}
+
+.player-data-label {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  opacity: 0.7;
+}
+
+.player-data-value {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+}
+
+.stat-card {
+  background: rgba(30, 41, 59, 0.5);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.stat-card:hover {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(99, 102, 241, 0.3);
+  transform: translateY(-2px);
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.stat-content {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  opacity: 0.7;
+}
+
+.stat-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.stat-progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 2px;
+  transition: width 1s ease-out;
+  width: 0;
+}
+
+.player-card:hover .stat-progress {
+  animation: progress-fill 1s forwards ease-out;
+}
+
+@keyframes progress-fill {
+  from { width: 0; }
+  to { width: var(--width, 100%); }
+}
+
+.player-tags-container {
+  margin-top: 1.5rem;
+  overflow: hidden;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+}
+
+.player-tags-scroll {
+  display: flex;
+  gap: 0.75rem;
+  animation: scroll-tags 20s linear infinite;
+}
+
+.player-tag {
+  flex-shrink: 0;
+  padding: 0.35rem 0.75rem;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  color: white;
+  white-space: nowrap;
+}
+
+@keyframes scroll-tags {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@media (max-width: 768px) {
+  .player-header-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .player-avatar {
+    height: 240px;
+  }
+  
+  .player-data-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dashboard Styles */
+.stats-dashboard {
+  perspective: 1000px;
+}
+
+.dashboard-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.dashboard-pill {
+  font-size: 0.7rem;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  color: white;
+  position: relative;
+  top: -2px;
+}
+
+.dashboard-pill::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  animation: pulse 2s infinite;
+}
+
+.dashboard-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  opacity: 0.7;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dashboard-card {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transform: translateZ(0) rotateX(0);
+}
+
+.dashboard-card:hover {
+  transform: translateZ(30px) rotateX(2deg);
+  box-shadow: 0 15px 40px -5px rgba(99, 102, 241, 0.3);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(30, 41, 59, 0.5);
+}
+
+.card-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.1));
+  color: var(--primary);
+  margin-right: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  flex: 1;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-action-btn {
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-light);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-action-btn:hover,
+.card-action-btn.active {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: rgba(99, 102, 241, 0.3);
+  color: white;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+/* Radar Chart */
+.radar-chart {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.radar-container {
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+.radar-web {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radar-circle {
+  position: absolute;
+  width: calc(20% * var(--i));
+  height: calc(20% * var(--i));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.radar-axis {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  transform-origin: center;
+  transform: rotate(calc(var(--i) * 45deg));
+}
+
+.radar-data-points {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radar-point {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+  transform-origin: center;
+  transform: rotate(var(--angle)) translateY(calc(-1px * var(--distance)));
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+.radar-area {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radar-labels {
+  position: absolute;
+  inset: 0;
+}
+
+.radar-label {
+  position: absolute;
+  transform-origin: center;
+  transform: rotate(var(--angle)) translateY(calc(-1px * var(--distance)));
+  font-size: 0.7rem;
+  color: var(--text-light);
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Ranking Bars */
+.top-rankings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .top-rankings {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ranking-category {
+  background: rgba(30, 41, 59, 0.3);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ranking-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.ranking-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.ranking-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ranking-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ranking-bar-label {
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+.ranking-bar-track {
+  height: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.ranking-bar-value {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 0.25rem;
+  position: relative;
+  width: 0;
+  transition: width 1s ease-out;
+  animation: progress-fill 1s forwards 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ranking-bar-value span {
+  font-size: 0.65rem;
+  color: white;
+  margin-right: 0.25rem;
+  font-weight: 600;
+}
+
+/* Teams Showcase */
+.teams-showcase {
+  margin-bottom: 2rem;
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.team-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.team-id {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: var(--v-primary-base);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+}
+
+.team-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0.5rem;
+  transition: color 0.3s;
+}
+
+/* Timeline styling */
+.timeline-container {
+  position: relative;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.timeline-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: linear-gradient(to bottom, transparent, var(--v-primary-base), transparent);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.timeline-event {
+  position: relative;
+  margin-bottom: 2rem;
+  width: 45%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
+  animation-delay: calc(0.1s * var(--i, 0));
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.timeline-event::after {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  width: 20px;
+  height: 20px;
+  background: var(--v-primary-base);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--v-primary-base);
+}
+
+.timeline-event:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-event {
+  left: 0;
+}
+
+.timeline-event::after {
+  right: -10px;
+}
+
+.timeline-event.right-event {
+  left: 55%;
+}
+
+.timeline-event.right-event::after {
+  left: -10px;
+}
+
+.event-date {
+  font-weight: bold;
+  color: var(--v-primary-base);
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.event-content {
+  color: #e0e0e0;
+  line-height: 1.4;
+}
+
+/* Biography Section */
+.biography-section {
+  margin-bottom: 4rem;
+}
+
+.bio-container {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.bio-header {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(30, 41, 59, 0.5);
+}
+
+.bio-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.1));
+  color: var(--primary);
+  margin-right: 1rem;
+}
+
+.bio-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  flex: 1;
+}
+
+.bio-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.bio-action-btn {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.bio-action-btn:hover {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: rgba(99, 102, 241, 0.3);
+  color: white;
+}
+
+.bio-content-wrapper {
+  padding: 2rem;
+  position: relative;
+  min-height: 300px;
+}
+
+.bio-flourish {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--primary-light), transparent 70%);
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+.bio-flourish.left-top {
+  top: -50px;
+  left: -50px;
+}
+
+.bio-flourish.right-bottom {
+  bottom: -50px;
+  right: -50px;
+}
+
+.bio-content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bio-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+.bio-text .first-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+.bio-text .first-sentence {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.bio-text .highlight {
+  color: var(--primary);
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+.bio-text .highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.bio-text .highlight:hover::after {
+  transform: scaleX(1);
+}
+
+.fade-in-para {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-up 0.8s ease forwards;
+}
+
+.bio-wordcloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.bio-keyword {
+  position: absolute;
+  font-weight: 500;
+  opacity: 0;
+  animation: float-in 0.8s ease forwards;
+  white-space: nowrap;
+}
+
+@keyframes fade-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  to {
+    opacity: 0.6;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.bio-keyword:hover {
+  animation: pulse-text 1s ease infinite;
+  opacity: 1;
+}
+
+@keyframes pulse-text {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .bio-wordcloud {
+    display: none;
+  }
+}
+
+.bio-expand-btn {
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.bio-expand-btn:hover {
+  background: rgba(99, 102, 241, 0.2);
+}
+
+.bio-summary {
+  background: rgba(30, 41, 59, 0.3);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.bio-summary-text {
+  color: var(--text-light);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.bio-key-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.bio-pill {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 9999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  color: white;
+}
+
+/* Add these styles for the simplified ICC Rankings */
+.rankings-tabs {
+  width: 100%;
+}
+
+.tabs-header {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ranking-tab-btn {
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-light);
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.ranking-tab-btn.active {
+  color: white;
+  border-bottom-color: var(--primary);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.ranking-tab-btn:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.ranking-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.ranking-summary-card {
+  background: rgba(30, 41, 59, 0.3);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ranking-category-name {
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.ranking-value {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.ranking-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.ranking-format {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+.section-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ranking-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.best-ranking-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.best-ranking-format {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.best-ranking-number {
+  font-weight: 600;
+  color: white;
+}
+</style> 

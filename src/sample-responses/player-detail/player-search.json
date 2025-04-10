@@ -1,0 +1,26 @@
+{
+    "player": [
+      {
+        "id": "9161",
+        "name": "Chamani Seneviratna",
+        "teamName": "Sri Lanka",
+        "faceImageId": 151508,
+        "dob": "1978-11-14"
+      },
+      {
+        "id": "1413",
+        "name": "Virat Kohli",
+        "teamName": "India",
+        "faceImageId": 616517,
+        "dob": "1988-11-05"
+      },
+      {
+        "id": "10213",
+        "name": "Virat Singh",
+        "teamName": "India",
+        "faceImageId": 182026,
+        "dob": "1997-12-08"
+      }
+    ],
+    "category": "Virat"
+  }

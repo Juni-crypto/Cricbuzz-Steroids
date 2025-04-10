@@ -1,0 +1,152 @@
+{
+    "typeMatches": [
+        {
+            "matchType": "League",
+            "seriesMatches": [
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 9237,
+                        "seriesName": "Indian Premier League 2025",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 114996,
+                                    "seriesId": 9237,
+                                    "seriesName": "Indian Premier League 2025",
+                                    "matchDesc": "6th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1742997600000",
+                                    "endDate": "1743010200000",
+                                    "state": "Complete",
+                                    "status": "Kolkata Knight Riders won by 8 wkts",
+                                    "team1": {
+                                        "teamId": 64,
+                                        "teamName": "Rajasthan Royals",
+                                        "teamSName": "RR",
+                                        "imageId": 225647
+                                    },
+                                    "team2": {
+                                        "teamId": 63,
+                                        "teamName": "Kolkata Knight Riders",
+                                        "teamSName": "KKR",
+                                        "imageId": 225646
+                                    },
+                                    "venueInfo": {
+                                        "id": 380,
+                                        "ground": "Barsapara Cricket Stadium",
+                                        "city": "Guwahati",
+                                        "timezone": "+05:30",
+                                        "latitude": "26.094292",
+                                        "longitude": "91.785187"
+                                    },
+                                    "currBatTeamId": 63,
+                                    "seriesStartDt": "1742601600000",
+                                    "seriesEndDt": "1748304000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "KKR Won",
+                                    "isFantasyEnabled": true
+                                },
+                                "matchScore": {
+                                    "team1Score": {
+                                        "inngs1": {
+                                            "inningsId": 1,
+                                            "runs": 151,
+                                            "wickets": 9,
+                                            "overs": 19.6
+                                        }
+                                    },
+                                    "team2Score": {
+                                        "inngs1": {
+                                            "inningsId": 2,
+                                            "runs": 153,
+                                            "wickets": 2,
+                                            "overs": 17.3
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "matchType": "Domestic",
+            "seriesMatches": [
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 8605,
+                        "seriesName": "Sheffield Shield 2024-25",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 103051,
+                                    "seriesId": 8605,
+                                    "seriesName": "Sheffield Shield 2024-25",
+                                    "matchDesc": "Final",
+                                    "matchFormat": "TEST",
+                                    "startDate": "1742947500000",
+                                    "endDate": "1743318300000",
+                                    "state": "Stumps",
+                                    "status": "Day 1: Stumps - South Australia lead by 63 runs",
+                                    "team1": {
+                                        "teamId": 164,
+                                        "teamName": "Queensland",
+                                        "teamSName": "QL",
+                                        "imageId": 172233
+                                    },
+                                    "team2": {
+                                        "teamId": 158,
+                                        "teamName": "South Australia",
+                                        "teamSName": "SAUS",
+                                        "imageId": 172225
+                                    },
+                                    "venueInfo": {
+                                        "id": 527,
+                                        "ground": "Karen Rolton Oval",
+                                        "city": "Adelaide, South Australia",
+                                        "timezone": "+10:30",
+                                        "latitude": "-34.9191215",
+                                        "longitude": "138.5815232"
+                                    },
+                                    "currBatTeamId": 158,
+                                    "seriesStartDt": "1728345600000",
+                                    "seriesEndDt": "1743465600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Stumps"
+                                },
+                                "matchScore": {
+                                    "team1Score": {
+                                        "inngs1": {
+                                            "inningsId": 1,
+                                            "runs": 95,
+                                            "wickets": 10,
+                                            "overs": 35.5
+                                        }
+                                    },
+                                    "team2Score": {
+                                        "inngs1": {
+                                            "inningsId": 2,
+                                            "runs": 158,
+                                            "wickets": 6,
+                                            "overs": 44.6
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "filters": {
+        "matchType": [
+            "International",
+            "League",
+            "Domestic",
+            "Women"
+        ]
+    },
+    "responseLastUpdated": "1743018744"
+}

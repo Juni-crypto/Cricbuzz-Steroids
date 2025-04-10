@@ -1,0 +1,702 @@
+{
+    "typeMatches": [
+        {
+            "matchType": "International",
+            "seriesMatches": [
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 8562,
+                        "seriesName": "Pakistan tour of New Zealand, 2025",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 102103,
+                                    "seriesId": 8562,
+                                    "seriesName": "Pakistan tour of New Zealand, 2025",
+                                    "matchDesc": "1st ODI",
+                                    "matchFormat": "ODI",
+                                    "startDate": "1743199200000",
+                                    "endDate": "1743228000000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Mar 29, 22:00 GMT",
+                                    "team1": {
+                                        "teamId": 13,
+                                        "teamName": "New Zealand",
+                                        "teamSName": "NZ",
+                                        "imageId": 172128
+                                    },
+                                    "team2": {
+                                        "teamId": 3,
+                                        "teamName": "Pakistan",
+                                        "teamSName": "PAK",
+                                        "imageId": 591986
+                                    },
+                                    "venueInfo": {
+                                        "id": 44,
+                                        "ground": "McLean Park",
+                                        "city": "Napier",
+                                        "timezone": "+13:00",
+                                        "latitude": "-39.50178",
+                                        "longitude": "176.913015"
+                                    },
+                                    "seriesStartDt": "1742083200000",
+                                    "seriesEndDt": "1743984000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 102108,
+                                    "seriesId": 8562,
+                                    "seriesName": "Pakistan tour of New Zealand, 2025",
+                                    "matchDesc": "2nd ODI",
+                                    "matchFormat": "ODI",
+                                    "startDate": "1743544800000",
+                                    "endDate": "1743573600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Apr 02, 22:00 GMT",
+                                    "team1": {
+                                        "teamId": 13,
+                                        "teamName": "New Zealand",
+                                        "teamSName": "NZ",
+                                        "imageId": 172128
+                                    },
+                                    "team2": {
+                                        "teamId": 3,
+                                        "teamName": "Pakistan",
+                                        "teamSName": "PAK",
+                                        "imageId": 591986
+                                    },
+                                    "venueInfo": {
+                                        "id": 100,
+                                        "ground": "Seddon Park",
+                                        "city": "Hamilton",
+                                        "timezone": "+13:00",
+                                        "latitude": "-37.786654",
+                                        "longitude": "175.266647"
+                                    },
+                                    "seriesStartDt": "1742083200000",
+                                    "seriesEndDt": "1743984000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "matchType": "League",
+            "seriesMatches": [
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 9237,
+                        "seriesName": "Indian Premier League 2025",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 115005,
+                                    "seriesId": 9237,
+                                    "seriesName": "Indian Premier League 2025",
+                                    "matchDesc": "7th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1743084000000",
+                                    "endDate": "1743096600000",
+                                    "state": "Preview",
+                                    "status": "Match starts at Mar 27, 14:00 GMT",
+                                    "team1": {
+                                        "teamId": 255,
+                                        "teamName": "Sunrisers Hyderabad",
+                                        "teamSName": "SRH",
+                                        "imageId": 225649
+                                    },
+                                    "team2": {
+                                        "teamId": 966,
+                                        "teamName": "Lucknow Super Giants",
+                                        "teamSName": "LSG",
+                                        "imageId": 389444
+                                    },
+                                    "venueInfo": {
+                                        "id": 80,
+                                        "ground": "Rajiv Gandhi International Stadium",
+                                        "city": "Hyderabad",
+                                        "timezone": "+05:30",
+                                        "latitude": "17.406495",
+                                        "longitude": "78.550451"
+                                    },
+                                    "seriesStartDt": "1742601600000",
+                                    "seriesEndDt": "1748304000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Preview",
+                                    "isFantasyEnabled": true
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 115012,
+                                    "seriesId": 9237,
+                                    "seriesName": "Indian Premier League 2025",
+                                    "matchDesc": "8th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1743170400000",
+                                    "endDate": "1743183000000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Mar 28, 14:00 GMT",
+                                    "team1": {
+                                        "teamId": 58,
+                                        "teamName": "Chennai Super Kings",
+                                        "teamSName": "CSK",
+                                        "imageId": 225641
+                                    },
+                                    "team2": {
+                                        "teamId": 59,
+                                        "teamName": "Royal Challengers Bengaluru",
+                                        "teamSName": "RCB",
+                                        "imageId": 225643
+                                    },
+                                    "venueInfo": {
+                                        "id": 11,
+                                        "ground": "MA Chidambaram Stadium",
+                                        "city": "Chennai",
+                                        "timezone": "+05:30",
+                                        "latitude": "13.06282",
+                                        "longitude": "80.279274"
+                                    },
+                                    "seriesStartDt": "1742601600000",
+                                    "seriesEndDt": "1748304000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 115014,
+                                    "seriesId": 9237,
+                                    "seriesName": "Indian Premier League 2025",
+                                    "matchDesc": "9th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1743256800000",
+                                    "endDate": "1743269400000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Mar 29, 14:00 GMT",
+                                    "team1": {
+                                        "teamId": 971,
+                                        "teamName": "Gujarat Titans",
+                                        "teamSName": "GT",
+                                        "imageId": 235085
+                                    },
+                                    "team2": {
+                                        "teamId": 62,
+                                        "teamName": "Mumbai Indians",
+                                        "teamSName": "MI",
+                                        "imageId": 225645
+                                    },
+                                    "venueInfo": {
+                                        "id": 50,
+                                        "ground": "Narendra Modi Stadium",
+                                        "city": "Ahmedabad",
+                                        "timezone": "+05:30",
+                                        "latitude": "23.091785",
+                                        "longitude": "72.597465"
+                                    },
+                                    "seriesStartDt": "1742601600000",
+                                    "seriesEndDt": "1748304000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 115021,
+                                    "seriesId": 9237,
+                                    "seriesName": "Indian Premier League 2025",
+                                    "matchDesc": "10th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1743328800000",
+                                    "endDate": "1743341400000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Mar 30, 10:00 GMT",
+                                    "team1": {
+                                        "teamId": 61,
+                                        "teamName": "Delhi Capitals",
+                                        "teamSName": "DC",
+                                        "imageId": 225644
+                                    },
+                                    "team2": {
+                                        "teamId": 255,
+                                        "teamName": "Sunrisers Hyderabad",
+                                        "teamSName": "SRH",
+                                        "imageId": 225649
+                                    },
+                                    "venueInfo": {
+                                        "id": 154,
+                                        "ground": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium",
+                                        "city": "Visakhapatnam",
+                                        "timezone": "+05:30",
+                                        "latitude": "17.797459",
+                                        "longitude": "83.352254"
+                                    },
+                                    "seriesStartDt": "1742601600000",
+                                    "seriesEndDt": "1748304000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 115030,
+                                    "seriesId": 9237,
+                                    "seriesName": "Indian Premier League 2025",
+                                    "matchDesc": "11th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1743343200000",
+                                    "endDate": "1743355800000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Mar 30, 14:00 GMT",
+                                    "team1": {
+                                        "teamId": 64,
+                                        "teamName": "Rajasthan Royals",
+                                        "teamSName": "RR",
+                                        "imageId": 225647
+                                    },
+                                    "team2": {
+                                        "teamId": 58,
+                                        "teamName": "Chennai Super Kings",
+                                        "teamSName": "CSK",
+                                        "imageId": 225641
+                                    },
+                                    "venueInfo": {
+                                        "id": 380,
+                                        "ground": "Barsapara Cricket Stadium",
+                                        "city": "Guwahati",
+                                        "timezone": "+05:30",
+                                        "latitude": "26.094292",
+                                        "longitude": "91.785187"
+                                    },
+                                    "seriesStartDt": "1742601600000",
+                                    "seriesEndDt": "1748304000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 115032,
+                                    "seriesId": 9237,
+                                    "seriesName": "Indian Premier League 2025",
+                                    "matchDesc": "12th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1743429600000",
+                                    "endDate": "1743442200000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Mar 31, 14:00 GMT",
+                                    "team1": {
+                                        "teamId": 62,
+                                        "teamName": "Mumbai Indians",
+                                        "teamSName": "MI",
+                                        "imageId": 225645
+                                    },
+                                    "team2": {
+                                        "teamId": 63,
+                                        "teamName": "Kolkata Knight Riders",
+                                        "teamSName": "KKR",
+                                        "imageId": 225646
+                                    },
+                                    "venueInfo": {
+                                        "id": 81,
+                                        "ground": "Wankhede Stadium",
+                                        "city": "Mumbai",
+                                        "timezone": "+05:30",
+                                        "latitude": "18.938956",
+                                        "longitude": "72.825719"
+                                    },
+                                    "seriesStartDt": "1742601600000",
+                                    "seriesEndDt": "1748304000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 115039,
+                                    "seriesId": 9237,
+                                    "seriesName": "Indian Premier League 2025",
+                                    "matchDesc": "13th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1743516000000",
+                                    "endDate": "1743528600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Apr 01, 14:00 GMT",
+                                    "team1": {
+                                        "teamId": 966,
+                                        "teamName": "Lucknow Super Giants",
+                                        "teamSName": "LSG",
+                                        "imageId": 389444
+                                    },
+                                    "team2": {
+                                        "teamId": 65,
+                                        "teamName": "Punjab Kings",
+                                        "teamSName": "PBKS",
+                                        "imageId": 225648
+                                    },
+                                    "venueInfo": {
+                                        "id": 485,
+                                        "ground": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+                                        "city": "Lucknow",
+                                        "timezone": "+05:30",
+                                        "latitude": "26.846694",
+                                        "longitude": "80.946166"
+                                    },
+                                    "seriesStartDt": "1742601600000",
+                                    "seriesEndDt": "1748304000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 115048,
+                                    "seriesId": 9237,
+                                    "seriesName": "Indian Premier League 2025",
+                                    "matchDesc": "14th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1743602400000",
+                                    "endDate": "1743615000000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Apr 02, 14:00 GMT",
+                                    "team1": {
+                                        "teamId": 59,
+                                        "teamName": "Royal Challengers Bengaluru",
+                                        "teamSName": "RCB",
+                                        "imageId": 225643
+                                    },
+                                    "team2": {
+                                        "teamId": 971,
+                                        "teamName": "Gujarat Titans",
+                                        "teamSName": "GT",
+                                        "imageId": 235085
+                                    },
+                                    "venueInfo": {
+                                        "id": 27,
+                                        "ground": "M.Chinnaswamy Stadium",
+                                        "city": "Bengaluru",
+                                        "timezone": "+05:30",
+                                        "latitude": "12.978853",
+                                        "longitude": "77.599533"
+                                    },
+                                    "seriesStartDt": "1742601600000",
+                                    "seriesEndDt": "1748304000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "matchType": "Domestic",
+            "seriesMatches": [
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 8730,
+                        "seriesName": "CSA Four-Day Series Division One 2024-25",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 104860,
+                                    "seriesId": 8730,
+                                    "seriesName": "CSA Four-Day Series Division One 2024-25",
+                                    "matchDesc": "22nd Match",
+                                    "matchFormat": "TEST",
+                                    "startDate": "1743062400000",
+                                    "endDate": "1743346800000",
+                                    "state": "Preview",
+                                    "status": "Match starts at Mar 27, 08:00 GMT",
+                                    "team1": {
+                                        "teamId": 917,
+                                        "teamName": "Western Province",
+                                        "teamSName": "WPR",
+                                        "imageId": 248460
+                                    },
+                                    "team2": {
+                                        "teamId": 1759,
+                                        "teamName": "Boland",
+                                        "teamSName": "BOL",
+                                        "imageId": 349610
+                                    },
+                                    "venueInfo": {
+                                        "id": 52,
+                                        "ground": "Newlands",
+                                        "city": "Cape Town",
+                                        "timezone": "+02:00",
+                                        "latitude": "-33.979629",
+                                        "longitude": "18.459466"
+                                    },
+                                    "seriesStartDt": "1730246400000",
+                                    "seriesEndDt": "1744761600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Preview"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 104868,
+                                    "seriesId": 8730,
+                                    "seriesName": "CSA Four-Day Series Division One 2024-25",
+                                    "matchDesc": "23rd Match",
+                                    "matchFormat": "TEST",
+                                    "startDate": "1743062400000",
+                                    "endDate": "1743346800000",
+                                    "state": "Preview",
+                                    "status": "Match starts at Mar 27, 08:00 GMT",
+                                    "team1": {
+                                        "teamId": 157,
+                                        "teamName": "Lions",
+                                        "teamSName": "LIONS",
+                                        "imageId": 172224
+                                    },
+                                    "team2": {
+                                        "teamId": 90,
+                                        "teamName": "Dolphins",
+                                        "teamSName": "DOL",
+                                        "imageId": 172183
+                                    },
+                                    "venueInfo": {
+                                        "id": 88,
+                                        "ground": "The Wanderers Stadium",
+                                        "city": "Johannesburg",
+                                        "timezone": "+02:00",
+                                        "latitude": "-26.131141",
+                                        "longitude": "28.057397"
+                                    },
+                                    "seriesStartDt": "1730246400000",
+                                    "seriesEndDt": "1744761600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Preview"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 104874,
+                                    "seriesId": 8730,
+                                    "seriesName": "CSA Four-Day Series Division One 2024-25",
+                                    "matchDesc": "24th Match",
+                                    "matchFormat": "TEST",
+                                    "startDate": "1743062400000",
+                                    "endDate": "1743346800000",
+                                    "state": "Preview",
+                                    "status": "Match starts at Mar 27, 08:00 GMT",
+                                    "team1": {
+                                        "teamId": 89,
+                                        "teamName": "Titans",
+                                        "teamSName": "TIT",
+                                        "imageId": 172182
+                                    },
+                                    "team2": {
+                                        "teamId": 922,
+                                        "teamName": "North West",
+                                        "teamSName": "NWEST",
+                                        "imageId": 248439
+                                    },
+                                    "venueInfo": {
+                                        "id": 75,
+                                        "ground": "SuperSport Park",
+                                        "city": "Centurion",
+                                        "timezone": "+02:00",
+                                        "latitude": "-25.859938",
+                                        "longitude": "28.195531"
+                                    },
+                                    "seriesStartDt": "1730246400000",
+                                    "seriesEndDt": "1744761600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Preview"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 8714,
+                        "seriesName": "CSA Four-Day Series Division Two 2024-25",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 104436,
+                                    "seriesId": 8714,
+                                    "seriesName": "CSA Four-Day Series Division Two 2024-25",
+                                    "matchDesc": "Final",
+                                    "matchFormat": "TEST",
+                                    "startDate": "1743580800000",
+                                    "endDate": "1743951600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Apr 02, 08:00 GMT",
+                                    "team1": {
+                                        "teamId": 1766,
+                                        "teamName": "KwaZulu-Natal Inland",
+                                        "teamSName": "KZNIN",
+                                        "imageId": 349611
+                                    },
+                                    "team2": {
+                                        "teamId": 923,
+                                        "teamName": "Northern Cape",
+                                        "teamSName": "NCAPE",
+                                        "imageId": 248438
+                                    },
+                                    "venueInfo": {
+                                        "id": 206,
+                                        "ground": "City Oval",
+                                        "city": "Pietermaritzburg",
+                                        "timezone": "+02:00",
+                                        "latitude": "-29.551181",
+                                        "longitude": "30.407238"
+                                    },
+                                    "seriesStartDt": "1730332800000",
+                                    "seriesEndDt": "1744070400000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 8939,
+                        "seriesName": "Plunket Shield 2024-25",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 107553,
+                                    "seriesId": 8939,
+                                    "seriesName": "Plunket Shield 2024-25",
+                                    "matchDesc": "22nd Match",
+                                    "matchFormat": "TEST",
+                                    "startDate": "1743197400000",
+                                    "endDate": "1743481800000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Mar 29, 21:30 GMT",
+                                    "team1": {
+                                        "teamId": 313,
+                                        "teamName": "Central Districts",
+                                        "teamSName": "CD",
+                                        "imageId": 172363
+                                    },
+                                    "team2": {
+                                        "teamId": 186,
+                                        "teamName": "Auckland",
+                                        "teamSName": "AKL",
+                                        "imageId": 172246
+                                    },
+                                    "venueInfo": {
+                                        "id": 424,
+                                        "ground": "Fitzherbert Park",
+                                        "city": "Palmerston North",
+                                        "timezone": "+13:00",
+                                        "latitude": "-40.3671656",
+                                        "longitude": "175.6201654"
+                                    },
+                                    "seriesStartDt": "1731283200000",
+                                    "seriesEndDt": "1743638400000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 107555,
+                                    "seriesId": 8939,
+                                    "seriesName": "Plunket Shield 2024-25",
+                                    "matchDesc": "23rd Match",
+                                    "matchFormat": "TEST",
+                                    "startDate": "1743197400000",
+                                    "endDate": "1743481800000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Mar 29, 21:30 GMT",
+                                    "team1": {
+                                        "teamId": 314,
+                                        "teamName": "Wellington",
+                                        "teamSName": "WEL",
+                                        "imageId": 172364
+                                    },
+                                    "team2": {
+                                        "teamId": 312,
+                                        "teamName": "Canterbury",
+                                        "teamSName": "CNTBRY",
+                                        "imageId": 172362
+                                    },
+                                    "venueInfo": {
+                                        "id": 45,
+                                        "ground": "Basin Reserve",
+                                        "city": "Wellington",
+                                        "timezone": "+13:00",
+                                        "latitude": "-41.161720",
+                                        "longitude": "175.323914"
+                                    },
+                                    "seriesStartDt": "1731283200000",
+                                    "seriesEndDt": "1743638400000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 107563,
+                                    "seriesId": 8939,
+                                    "seriesName": "Plunket Shield 2024-25",
+                                    "matchDesc": "24th Match",
+                                    "matchFormat": "TEST",
+                                    "startDate": "1743197400000",
+                                    "endDate": "1743481800000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Mar 29, 21:30 GMT",
+                                    "team1": {
+                                        "teamId": 105,
+                                        "teamName": "Otago",
+                                        "teamSName": "OTG",
+                                        "imageId": 172197
+                                    },
+                                    "team2": {
+                                        "teamId": 294,
+                                        "teamName": "Northern Knights",
+                                        "teamSName": "NK",
+                                        "imageId": 172343
+                                    },
+                                    "venueInfo": {
+                                        "id": 116,
+                                        "ground": "University Oval",
+                                        "city": "Dunedin",
+                                        "timezone": "+13:00",
+                                        "latitude": "-45.874401",
+                                        "longitude": "170.505005"
+                                    },
+                                    "seriesStartDt": "1731283200000",
+                                    "seriesEndDt": "1743638400000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "filters": {
+        "matchType": [
+            "International",
+            "League",
+            "Domestic",
+            "Women"
+        ]
+    },
+    "appIndex": {
+        "seoTitle": "Live Cricket Score - Scorecard and Match Results",
+        "webURL": "www.cricbuzz.com/live-cricket-scores/"
+    },
+    "responseLastUpdated": "1743018644"
+}

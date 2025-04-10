@@ -1,0 +1,1141 @@
+{
+  "inningsId": 2,
+  "batsmanStriker": {
+    "batBalls": 22,
+    "batDots": 3,
+    "batFours": 2,
+    "batId": 587,
+    "batName": "Ravindra Jadeja",
+    "batMins": 46,
+    "batRuns": 32,
+    "batSixes": 1,
+    "batStrikeRate": 145.45
+  },
+  "batsmanNonStriker": {
+    "batBalls": 4,
+    "batDots": 0,
+    "batFours": 0,
+    "batId": 8512,
+    "batName": "Jamie Overton",
+    "batMins": 5,
+    "batRuns": 11,
+    "batSixes": 1,
+    "batStrikeRate": 275
+  },
+  "batTeam": {
+    "teamId": 58,
+    "teamScore": 176,
+    "teamWkts": 6
+  },
+  "bowlerStriker": {
+    "bowlId": 8356,
+    "bowlName": "Sandeep Sharma",
+    "bowlMaidens": 0,
+    "bowlNoballs": 0,
+    "bowlOvs": 4,
+    "bowlRuns": 42,
+    "bowlWides": 1,
+    "bowlWkts": 1,
+    "bowlEcon": 10.5
+  },
+  "bowlerNonStriker": {
+    "bowlId": 11307,
+    "bowlName": "Tushar Deshpande",
+    "bowlMaidens": 0,
+    "bowlNoballs": 0,
+    "bowlOvs": 4,
+    "bowlRuns": 45,
+    "bowlWides": 2,
+    "bowlWkts": 0,
+    "bowlEcon": 11.25
+  },
+  "overs": 19.6,
+  "recentOvsStats": "... | 4 1 1 6 1 6  | Wd W 1 1 6 2 2",
+  "target": 183,
+  "partnerShip": {
+    "balls": 5,
+    "runs": 12
+  },
+  "currentRunRate": 8.8,
+  "requiredRunRate": 0,
+  "lastWicket": "MS Dhoni  c Hetmyer b Sandeep Sharma 16(11)  - 164/6 in 19.1 ov.",
+  "matchScoreDetails": {
+    "matchId": 115030,
+    "inningsScoreList": [
+      {
+        "inningsId": 2,
+        "batTeamId": 58,
+        "batTeamName": "CSK",
+        "score": 176,
+        "wickets": 6,
+        "overs": 19.6,
+        "isDeclared": false,
+        "isFollowOn": false,
+        "ballNbr": 120
+      },
+      {
+        "inningsId": 1,
+        "batTeamId": 64,
+        "batTeamName": "RR",
+        "score": 182,
+        "wickets": 9,
+        "overs": 19.6,
+        "isDeclared": false,
+        "isFollowOn": false,
+        "ballNbr": 120
+      }
+    ],
+    "tossResults": {
+      "tossWinnerId": 58,
+      "tossWinnerName": "Chennai Super Kings",
+      "decision": "Bowling"
+    },
+    "matchTeamInfo": [
+      {
+        "battingTeamId": 64,
+        "battingTeamShortName": "RR",
+        "bowlingTeamId": 58,
+        "bowlingTeamShortName": "CSK"
+      },
+      {
+        "battingTeamId": 58,
+        "battingTeamShortName": "CSK",
+        "bowlingTeamId": 64,
+        "bowlingTeamShortName": "RR"
+      }
+    ],
+    "isMatchNotCovered": false,
+    "matchFormat": "T20",
+    "state": "Complete",
+    "customStatus": "Rajasthan Royals won by 6 runs",
+    "highlightedTeamId": 64
+  },
+  "latestPerformance": [
+    {
+      "runs": 54,
+      "wkts": 2,
+      "label": "Last 5 overs"
+    },
+    {
+      "runs": 38,
+      "wkts": 1,
+      "label": "Last 3 overs"
+    }
+  ],
+  "ppData": {
+    "pp_1": {
+      "ppId": 2,
+      "ppOversFrom": 0.1,
+      "ppOversTo": 6,
+      "ppType": "mandatory",
+      "runsScored": 42
+    }
+  },
+  "overSummaryList": [
+    {
+      "score": 176,
+      "wickets": 6,
+      "inningsId": 2,
+      "o_summary": "Wd W 1 1 6 2 2 ",
+      "runs": 13,
+      "batStrikerIds": [
+        8512,
+        587,
+        265
+      ],
+      "batStrikerNames": [
+        "Jamie Overton",
+        "Jadeja",
+        "Dhoni"
+      ],
+      "batStrikerRuns": 11,
+      "batStrikerBalls": 4,
+      "batNonStrikerIds": [],
+      "batNonStrikerNames": [],
+      "batNonStrikerRuns": 32,
+      "batNonStrikerBalls": 22,
+      "bowlIds": [
+        8356
+      ],
+      "bowlNames": [
+        "Sandeep Sharma"
+      ],
+      "bowlOvers": 4,
+      "bowlMaidens": 0,
+      "bowlRuns": 42,
+      "bowlWickets": 1,
+      "timestamp": 1743357529653,
+      "overNum": 19.6,
+      "batTeamName": "CSK",
+      "event": "over-break"
+    },
+    {
+      "score": 163,
+      "wickets": 5,
+      "inningsId": 2,
+      "o_summary": "4 1 1 6 1 6 ",
+      "runs": 19,
+      "batStrikerIds": [
+        587,
+        265
+      ],
+      "batStrikerNames": [
+        "Jadeja",
+        "Dhoni"
+      ],
+      "batStrikerRuns": 31,
+      "batStrikerBalls": 21,
+      "batNonStrikerIds": [],
+      "batNonStrikerNames": [],
+      "batNonStrikerRuns": 16,
+      "batNonStrikerBalls": 10,
+      "bowlIds": [
+        11307
+      ],
+      "bowlNames": [
+        "Tushar Deshpande"
+      ],
+      "bowlOvers": 4,
+      "bowlMaidens": 0,
+      "bowlRuns": 45,
+      "bowlWickets": 0,
+      "timestamp": 1743356997775,
+      "overNum": 18.6,
+      "batTeamName": "CSK",
+      "event": "over-break"
+    },
+    {
+      "score": 144,
+      "wickets": 5,
+      "inningsId": 2,
+      "o_summary": "2 1 1 1 0 1 ",
+      "runs": 6,
+      "batStrikerIds": [
+        265,
+        587
+      ],
+      "batStrikerNames": [
+        "Dhoni",
+        "Jadeja"
+      ],
+      "batStrikerRuns": 4,
+      "batStrikerBalls": 6,
+      "batNonStrikerIds": [],
+      "batNonStrikerNames": [],
+      "batNonStrikerRuns": 24,
+      "batNonStrikerBalls": 19,
+      "bowlIds": [
+        18504
+      ],
+      "bowlNames": [
+        "Maheesh Theekshana"
+      ],
+      "bowlOvers": 4,
+      "bowlMaidens": 0,
+      "bowlRuns": 30,
+      "bowlWickets": 0,
+      "timestamp": 1743356644673,
+      "overNum": 17.6,
+      "batTeamName": "CSK",
+      "event": "over-break"
+    },
+    {
+      "score": 138,
+      "wickets": 5,
+      "inningsId": 2,
+      "o_summary": "4 1 1 1 1 1 ",
+      "runs": 9,
+      "batStrikerIds": [
+        587,
+        265
+      ],
+      "batStrikerNames": [
+        "Jadeja",
+        "Dhoni"
+      ],
+      "batStrikerRuns": 20,
+      "batStrikerBalls": 16,
+      "batNonStrikerIds": [],
+      "batNonStrikerNames": [],
+      "batNonStrikerRuns": 2,
+      "batNonStrikerBalls": 3,
+      "bowlIds": [
+        8356
+      ],
+      "bowlNames": [
+        "Sandeep Sharma"
+      ],
+      "bowlOvers": 3,
+      "bowlMaidens": 0,
+      "bowlRuns": 29,
+      "bowlWickets": 0,
+      "timestamp": 1743356377192,
+      "overNum": 16.6,
+      "batTeamName": "CSK",
+      "event": "over-break"
+    },
+    {
+      "score": 129,
+      "wickets": 5,
+      "inningsId": 2,
+      "o_summary": "0 0 1 6 W 0 ",
+      "runs": 7,
+      "batStrikerIds": [
+        265,
+        11813,
+        587
+      ],
+      "batStrikerNames": [
+        "Dhoni",
+        "Gaikwad",
+        "Jadeja"
+      ],
+      "batStrikerRuns": 0,
+      "batStrikerBalls": 1,
+      "batNonStrikerIds": [],
+      "batNonStrikerNames": [],
+      "batNonStrikerRuns": 13,
+      "batNonStrikerBalls": 12,
+      "bowlIds": [
+        10926
+      ],
+      "bowlNames": [
+        "Wanindu Hasaranga"
+      ],
+      "bowlOvers": 4,
+      "bowlMaidens": 0,
+      "bowlRuns": 35,
+      "bowlWickets": 4,
+      "timestamp": 1743356078341,
+      "overNum": 15.6,
+      "batTeamName": "CSK",
+      "event": "over-break"
+    },
+    {
+      "score": 122,
+      "wickets": 4,
+      "inningsId": 2,
+      "o_summary": "Wd 0 2 4 Wd 1 0 2 ",
+      "runs": 11,
+      "batStrikerIds": [
+        11813,
+        587
+      ],
+      "batStrikerNames": [
+        "Gaikwad",
+        "Jadeja"
+      ],
+      "batStrikerRuns": 57,
+      "batStrikerBalls": 42,
+      "batNonStrikerIds": [],
+      "batNonStrikerNames": [],
+      "batNonStrikerRuns": 12,
+      "batNonStrikerBalls": 9,
+      "bowlIds": [
+        11307
+      ],
+      "bowlNames": [
+        "Tushar Deshpande"
+      ],
+      "bowlOvers": 3,
+      "bowlMaidens": 0,
+      "bowlRuns": 26,
+      "bowlWickets": 0,
+      "timestamp": 1743355674902,
+      "overNum": 14.6,
+      "batTeamName": "CSK",
+      "event": "over-break"
+    },
+    {
+      "score": 111,
+      "wickets": 4,
+      "inningsId": 2,
+      "o_summary": "4 2 1 1 2 2 ",
+      "runs": 12,
+      "batStrikerIds": [
+        11813,
+        587
+      ],
+      "batStrikerNames": [
+        "Gaikwad",
+        "Jadeja"
+      ],
+      "batStrikerRuns": 55,
+      "batStrikerBalls": 40,
+      "batNonStrikerIds": [],
+      "batNonStrikerNames": [],
+      "batNonStrikerRuns": 5,
+      "batNonStrikerBalls": 5,
+      "bowlIds": [
+        18504
+      ],
+      "bowlNames": [
+        "Maheesh Theekshana"
+      ],
+      "bowlOvers": 3,
+      "bowlMaidens": 0,
+      "bowlRuns": 24,
+      "bowlWickets": 0,
+      "timestamp": 1743355167330,
+      "overNum": 13.6,
+      "batTeamName": "CSK",
+      "event": "over-break"
+    },
+    {
+      "score": 99,
+      "wickets": 4,
+      "inningsId": 2,
+      "o_summary": "1 1 1 1 1 1 ",
+      "runs": 6,
+      "batStrikerIds": [
+        11813,
+        587
+      ],
+      "batStrikerNames": [
+        "Gaikwad",
+        "Jadeja"
+      ],
+      "batStrikerRuns": 44,
+      "batStrikerBalls": 35,
+      "batNonStrikerIds": [],
+      "batNonStrikerNames": [],
+      "batNonStrikerRuns": 4,
+      "batNonStrikerBalls": 4,
+      "bowlIds": [
+        8356
+      ],
+      "bowlNames": [
+        "Sandeep Sharma"
+      ],
+      "bowlOvers": 2,
+      "bowlMaidens": 0,
+      "bowlRuns": 20,
+      "bowlWickets": 0,
+      "timestamp": 1743354894257,
+      "overNum": 12.6,
+      "batTeamName": "CSK",
+      "event": "over-break"
+    }
+  ],
+  "status": "Rajasthan Royals won by 6 runs",
+  "lastWicketScore": 16,
+  "remRunsToWin": 0,
+  "matchHeader": {
+    "matchId": 115030,
+    "matchDescription": "11th Match",
+    "matchFormat": "T20",
+    "matchType": "league",
+    "complete": true,
+    "domestic": false,
+    "matchStartTimestamp": 1743343200000,
+    "matchCompleteTimestamp": 1743357553956,
+    "dayNight": false,
+    "year": 2025,
+    "state": "Complete",
+    "status": "Chennai Super Kings opt to bowl",
+    "tossResults": {
+      "tossWinnerId": 58,
+      "tossWinnerName": "Chennai Super Kings",
+      "decision": "Bowling"
+    },
+    "result": {
+      "resultType": "win",
+      "winningTeam": "Rajasthan Royals",
+      "winningteamId": 64,
+      "winningMargin": 6,
+      "winByRuns": true,
+      "winByInnings": false
+    },
+    "revisedTarget": {
+      "reason": ""
+    },
+    "playersOfTheMatch": [
+      {
+        "id": 9204,
+        "name": "Nitish Rana",
+        "fullName": "Nitish Rana",
+        "nickName": "Nitish Rana",
+        "captain": false,
+        "keeper": false,
+        "substitute": false,
+        "teamName": "India",
+        "faceImageId": 171047
+      }
+    ],
+    "playersOfTheSeries": [],
+    "matchTeamInfo": [
+      {
+        "battingTeamId": 64,
+        "battingTeamShortName": "RR",
+        "bowlingTeamId": 58,
+        "bowlingTeamShortName": "CSK"
+      },
+      {
+        "battingTeamId": 58,
+        "battingTeamShortName": "CSK",
+        "bowlingTeamId": 64,
+        "bowlingTeamShortName": "RR"
+      }
+    ],
+    "isMatchNotCovered": false,
+    "team1": {
+      "id": 64,
+      "name": "Rajasthan Royals",
+      "playerDetails": [],
+      "shortName": "RR"
+    },
+    "team2": {
+      "id": 58,
+      "name": "Chennai Super Kings",
+      "playerDetails": [],
+      "shortName": "CSK"
+    },
+    "seriesDesc": "Indian Premier League 2025",
+    "seriesId": 9237,
+    "seriesName": "Indian Premier League 2025",
+    "alertType": "auto",
+    "livestreamEnabled": false
+  },
+  "responseLastUpdated": 1743425053,
+  "event": "OVER-BREAK",
+  "overSepList": {
+    "overSummaryList": [
+      {
+        "score": 176,
+        "wickets": 6,
+        "inningsId": 2,
+        "o_summary": "Wd W 1 1 6 2 2 ",
+        "runs": 13,
+        "batStrikerIds": [
+          8512,
+          587,
+          265
+        ],
+        "batStrikerNames": [
+          "Jamie Overton",
+          "Jadeja",
+          "Dhoni"
+        ],
+        "batStrikerRuns": 11,
+        "batStrikerBalls": 4,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 32,
+        "batNonStrikerBalls": 22,
+        "bowlIds": [
+          8356
+        ],
+        "bowlNames": [
+          "Sandeep Sharma"
+        ],
+        "bowlOvers": 4,
+        "bowlMaidens": 0,
+        "bowlRuns": 42,
+        "bowlWickets": 1,
+        "timestamp": 1743357529653,
+        "overNum": 19.6,
+        "batTeamName": "CSK",
+        "event": "over-break"
+      },
+      {
+        "score": 163,
+        "wickets": 5,
+        "inningsId": 2,
+        "o_summary": "4 1 1 6 1 6 ",
+        "runs": 19,
+        "batStrikerIds": [
+          587,
+          265
+        ],
+        "batStrikerNames": [
+          "Jadeja",
+          "Dhoni"
+        ],
+        "batStrikerRuns": 31,
+        "batStrikerBalls": 21,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 16,
+        "batNonStrikerBalls": 10,
+        "bowlIds": [
+          11307
+        ],
+        "bowlNames": [
+          "Tushar Deshpande"
+        ],
+        "bowlOvers": 4,
+        "bowlMaidens": 0,
+        "bowlRuns": 45,
+        "bowlWickets": 0,
+        "timestamp": 1743356997775,
+        "overNum": 18.6,
+        "batTeamName": "CSK",
+        "event": "over-break"
+      },
+      {
+        "score": 144,
+        "wickets": 5,
+        "inningsId": 2,
+        "o_summary": "2 1 1 1 0 1 ",
+        "runs": 6,
+        "batStrikerIds": [
+          265,
+          587
+        ],
+        "batStrikerNames": [
+          "Dhoni",
+          "Jadeja"
+        ],
+        "batStrikerRuns": 4,
+        "batStrikerBalls": 6,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 24,
+        "batNonStrikerBalls": 19,
+        "bowlIds": [
+          18504
+        ],
+        "bowlNames": [
+          "Maheesh Theekshana"
+        ],
+        "bowlOvers": 4,
+        "bowlMaidens": 0,
+        "bowlRuns": 30,
+        "bowlWickets": 0,
+        "timestamp": 1743356644673,
+        "overNum": 17.6,
+        "batTeamName": "CSK",
+        "event": "over-break"
+      },
+      {
+        "score": 138,
+        "wickets": 5,
+        "inningsId": 2,
+        "o_summary": "4 1 1 1 1 1 ",
+        "runs": 9,
+        "batStrikerIds": [
+          587,
+          265
+        ],
+        "batStrikerNames": [
+          "Jadeja",
+          "Dhoni"
+        ],
+        "batStrikerRuns": 20,
+        "batStrikerBalls": 16,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 2,
+        "batNonStrikerBalls": 3,
+        "bowlIds": [
+          8356
+        ],
+        "bowlNames": [
+          "Sandeep Sharma"
+        ],
+        "bowlOvers": 3,
+        "bowlMaidens": 0,
+        "bowlRuns": 29,
+        "bowlWickets": 0,
+        "timestamp": 1743356377192,
+        "overNum": 16.6,
+        "batTeamName": "CSK",
+        "event": "over-break"
+      },
+      {
+        "score": 129,
+        "wickets": 5,
+        "inningsId": 2,
+        "o_summary": "0 0 1 6 W 0 ",
+        "runs": 7,
+        "batStrikerIds": [
+          265,
+          11813,
+          587
+        ],
+        "batStrikerNames": [
+          "Dhoni",
+          "Gaikwad",
+          "Jadeja"
+        ],
+        "batStrikerRuns": 0,
+        "batStrikerBalls": 1,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 13,
+        "batNonStrikerBalls": 12,
+        "bowlIds": [
+          10926
+        ],
+        "bowlNames": [
+          "Wanindu Hasaranga"
+        ],
+        "bowlOvers": 4,
+        "bowlMaidens": 0,
+        "bowlRuns": 35,
+        "bowlWickets": 4,
+        "timestamp": 1743356078341,
+        "overNum": 15.6,
+        "batTeamName": "CSK",
+        "event": "over-break"
+      },
+      {
+        "score": 122,
+        "wickets": 4,
+        "inningsId": 2,
+        "o_summary": "Wd 0 2 4 Wd 1 0 2 ",
+        "runs": 11,
+        "batStrikerIds": [
+          11813,
+          587
+        ],
+        "batStrikerNames": [
+          "Gaikwad",
+          "Jadeja"
+        ],
+        "batStrikerRuns": 57,
+        "batStrikerBalls": 42,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 12,
+        "batNonStrikerBalls": 9,
+        "bowlIds": [
+          11307
+        ],
+        "bowlNames": [
+          "Tushar Deshpande"
+        ],
+        "bowlOvers": 3,
+        "bowlMaidens": 0,
+        "bowlRuns": 26,
+        "bowlWickets": 0,
+        "timestamp": 1743355674902,
+        "overNum": 14.6,
+        "batTeamName": "CSK",
+        "event": "over-break"
+      },
+      {
+        "score": 111,
+        "wickets": 4,
+        "inningsId": 2,
+        "o_summary": "4 2 1 1 2 2 ",
+        "runs": 12,
+        "batStrikerIds": [
+          11813,
+          587
+        ],
+        "batStrikerNames": [
+          "Gaikwad",
+          "Jadeja"
+        ],
+        "batStrikerRuns": 55,
+        "batStrikerBalls": 40,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 5,
+        "batNonStrikerBalls": 5,
+        "bowlIds": [
+          18504
+        ],
+        "bowlNames": [
+          "Maheesh Theekshana"
+        ],
+        "bowlOvers": 3,
+        "bowlMaidens": 0,
+        "bowlRuns": 24,
+        "bowlWickets": 0,
+        "timestamp": 1743355167330,
+        "overNum": 13.6,
+        "batTeamName": "CSK",
+        "event": "over-break"
+      },
+      {
+        "score": 99,
+        "wickets": 4,
+        "inningsId": 2,
+        "o_summary": "1 1 1 1 1 1 ",
+        "runs": 6,
+        "batStrikerIds": [
+          11813,
+          587
+        ],
+        "batStrikerNames": [
+          "Gaikwad",
+          "Jadeja"
+        ],
+        "batStrikerRuns": 44,
+        "batStrikerBalls": 35,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 4,
+        "batNonStrikerBalls": 4,
+        "bowlIds": [
+          8356
+        ],
+        "bowlNames": [
+          "Sandeep Sharma"
+        ],
+        "bowlOvers": 2,
+        "bowlMaidens": 0,
+        "bowlRuns": 20,
+        "bowlWickets": 0,
+        "timestamp": 1743354894257,
+        "overNum": 12.6,
+        "batTeamName": "CSK",
+        "event": "over-break"
+      }
+    ],
+    "overSep": [
+      {
+        "score": 176,
+        "wickets": 6,
+        "inningsId": 2,
+        "o_summary": "Wd W 1 1 6 2 2 ",
+        "runs": 13,
+        "batStrikerIds": [
+          8512,
+          587,
+          265
+        ],
+        "batStrikerNames": [
+          "Jamie Overton",
+          "Jadeja",
+          "Dhoni"
+        ],
+        "batStrikerRuns": 11,
+        "batStrikerBalls": 4,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 32,
+        "batNonStrikerBalls": 22,
+        "bowlIds": [
+          8356
+        ],
+        "bowlNames": [
+          "Sandeep Sharma"
+        ],
+        "bowlOvers": 4,
+        "bowlMaidens": 0,
+        "bowlRuns": 42,
+        "bowlWickets": 1,
+        "timestamp": 1743357529653,
+        "overNum": 19.6,
+        "batTeamName": "CSK",
+        "event": "over-break",
+        "overSummary": "Wd W 1 1 6 2 2 ",
+        "ovrBatNames": [
+          "Jamie Overton",
+          "Jadeja",
+          "Dhoni"
+        ],
+        "ovrBowlNames": [
+          "Sandeep Sharma"
+        ]
+      },
+      {
+        "score": 163,
+        "wickets": 5,
+        "inningsId": 2,
+        "o_summary": "4 1 1 6 1 6 ",
+        "runs": 19,
+        "batStrikerIds": [
+          587,
+          265
+        ],
+        "batStrikerNames": [
+          "Jadeja",
+          "Dhoni"
+        ],
+        "batStrikerRuns": 31,
+        "batStrikerBalls": 21,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 16,
+        "batNonStrikerBalls": 10,
+        "bowlIds": [
+          11307
+        ],
+        "bowlNames": [
+          "Tushar Deshpande"
+        ],
+        "bowlOvers": 4,
+        "bowlMaidens": 0,
+        "bowlRuns": 45,
+        "bowlWickets": 0,
+        "timestamp": 1743356997775,
+        "overNum": 18.6,
+        "batTeamName": "CSK",
+        "event": "over-break",
+        "overSummary": "4 1 1 6 1 6 ",
+        "ovrBatNames": [
+          "Jadeja",
+          "Dhoni"
+        ],
+        "ovrBowlNames": [
+          "Tushar Deshpande"
+        ]
+      },
+      {
+        "score": 144,
+        "wickets": 5,
+        "inningsId": 2,
+        "o_summary": "2 1 1 1 0 1 ",
+        "runs": 6,
+        "batStrikerIds": [
+          265,
+          587
+        ],
+        "batStrikerNames": [
+          "Dhoni",
+          "Jadeja"
+        ],
+        "batStrikerRuns": 4,
+        "batStrikerBalls": 6,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 24,
+        "batNonStrikerBalls": 19,
+        "bowlIds": [
+          18504
+        ],
+        "bowlNames": [
+          "Maheesh Theekshana"
+        ],
+        "bowlOvers": 4,
+        "bowlMaidens": 0,
+        "bowlRuns": 30,
+        "bowlWickets": 0,
+        "timestamp": 1743356644673,
+        "overNum": 17.6,
+        "batTeamName": "CSK",
+        "event": "over-break",
+        "overSummary": "2 1 1 1 0 1 ",
+        "ovrBatNames": [
+          "Dhoni",
+          "Jadeja"
+        ],
+        "ovrBowlNames": [
+          "Maheesh Theekshana"
+        ]
+      },
+      {
+        "score": 138,
+        "wickets": 5,
+        "inningsId": 2,
+        "o_summary": "4 1 1 1 1 1 ",
+        "runs": 9,
+        "batStrikerIds": [
+          587,
+          265
+        ],
+        "batStrikerNames": [
+          "Jadeja",
+          "Dhoni"
+        ],
+        "batStrikerRuns": 20,
+        "batStrikerBalls": 16,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 2,
+        "batNonStrikerBalls": 3,
+        "bowlIds": [
+          8356
+        ],
+        "bowlNames": [
+          "Sandeep Sharma"
+        ],
+        "bowlOvers": 3,
+        "bowlMaidens": 0,
+        "bowlRuns": 29,
+        "bowlWickets": 0,
+        "timestamp": 1743356377192,
+        "overNum": 16.6,
+        "batTeamName": "CSK",
+        "event": "over-break",
+        "overSummary": "4 1 1 1 1 1 ",
+        "ovrBatNames": [
+          "Jadeja",
+          "Dhoni"
+        ],
+        "ovrBowlNames": [
+          "Sandeep Sharma"
+        ]
+      },
+      {
+        "score": 129,
+        "wickets": 5,
+        "inningsId": 2,
+        "o_summary": "0 0 1 6 W 0 ",
+        "runs": 7,
+        "batStrikerIds": [
+          265,
+          11813,
+          587
+        ],
+        "batStrikerNames": [
+          "Dhoni",
+          "Gaikwad",
+          "Jadeja"
+        ],
+        "batStrikerRuns": 0,
+        "batStrikerBalls": 1,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 13,
+        "batNonStrikerBalls": 12,
+        "bowlIds": [
+          10926
+        ],
+        "bowlNames": [
+          "Wanindu Hasaranga"
+        ],
+        "bowlOvers": 4,
+        "bowlMaidens": 0,
+        "bowlRuns": 35,
+        "bowlWickets": 4,
+        "timestamp": 1743356078341,
+        "overNum": 15.6,
+        "batTeamName": "CSK",
+        "event": "over-break",
+        "overSummary": "0 0 1 6 W 0 ",
+        "ovrBatNames": [
+          "Dhoni",
+          "Gaikwad",
+          "Jadeja"
+        ],
+        "ovrBowlNames": [
+          "Wanindu Hasaranga"
+        ]
+      },
+      {
+        "score": 122,
+        "wickets": 4,
+        "inningsId": 2,
+        "o_summary": "Wd 0 2 4 Wd 1 0 2 ",
+        "runs": 11,
+        "batStrikerIds": [
+          11813,
+          587
+        ],
+        "batStrikerNames": [
+          "Gaikwad",
+          "Jadeja"
+        ],
+        "batStrikerRuns": 57,
+        "batStrikerBalls": 42,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 12,
+        "batNonStrikerBalls": 9,
+        "bowlIds": [
+          11307
+        ],
+        "bowlNames": [
+          "Tushar Deshpande"
+        ],
+        "bowlOvers": 3,
+        "bowlMaidens": 0,
+        "bowlRuns": 26,
+        "bowlWickets": 0,
+        "timestamp": 1743355674902,
+        "overNum": 14.6,
+        "batTeamName": "CSK",
+        "event": "over-break",
+        "overSummary": "Wd 0 2 4 Wd 1 0 2 ",
+        "ovrBatNames": [
+          "Gaikwad",
+          "Jadeja"
+        ],
+        "ovrBowlNames": [
+          "Tushar Deshpande"
+        ]
+      },
+      {
+        "score": 111,
+        "wickets": 4,
+        "inningsId": 2,
+        "o_summary": "4 2 1 1 2 2 ",
+        "runs": 12,
+        "batStrikerIds": [
+          11813,
+          587
+        ],
+        "batStrikerNames": [
+          "Gaikwad",
+          "Jadeja"
+        ],
+        "batStrikerRuns": 55,
+        "batStrikerBalls": 40,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 5,
+        "batNonStrikerBalls": 5,
+        "bowlIds": [
+          18504
+        ],
+        "bowlNames": [
+          "Maheesh Theekshana"
+        ],
+        "bowlOvers": 3,
+        "bowlMaidens": 0,
+        "bowlRuns": 24,
+        "bowlWickets": 0,
+        "timestamp": 1743355167330,
+        "overNum": 13.6,
+        "batTeamName": "CSK",
+        "event": "over-break",
+        "overSummary": "4 2 1 1 2 2 ",
+        "ovrBatNames": [
+          "Gaikwad",
+          "Jadeja"
+        ],
+        "ovrBowlNames": [
+          "Maheesh Theekshana"
+        ]
+      },
+      {
+        "score": 99,
+        "wickets": 4,
+        "inningsId": 2,
+        "o_summary": "1 1 1 1 1 1 ",
+        "runs": 6,
+        "batStrikerIds": [
+          11813,
+          587
+        ],
+        "batStrikerNames": [
+          "Gaikwad",
+          "Jadeja"
+        ],
+        "batStrikerRuns": 44,
+        "batStrikerBalls": 35,
+        "batNonStrikerIds": [],
+        "batNonStrikerNames": [],
+        "batNonStrikerRuns": 4,
+        "batNonStrikerBalls": 4,
+        "bowlIds": [
+          8356
+        ],
+        "bowlNames": [
+          "Sandeep Sharma"
+        ],
+        "bowlOvers": 2,
+        "bowlMaidens": 0,
+        "bowlRuns": 20,
+        "bowlWickets": 0,
+        "timestamp": 1743354894257,
+        "overNum": 12.6,
+        "batTeamName": "CSK",
+        "event": "over-break",
+        "overSummary": "1 1 1 1 1 1 ",
+        "ovrBatNames": [
+          "Gaikwad",
+          "Jadeja"
+        ],
+        "ovrBowlNames": [
+          "Sandeep Sharma"
+        ]
+      }
+    ]
+  }
+}
